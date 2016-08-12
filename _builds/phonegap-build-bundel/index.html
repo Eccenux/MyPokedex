@@ -56,10 +56,10 @@
 <!--
 	Main page = start page
 -->	
-<div data-role="page" id="page-start">
+<div data-role="page" id="page-pokedex">
 
 	<div data-role="header">
-		<h1 data-i18n-key="title-application">&nbsp;</h1>
+		<h1 data-i18n-key="Pokedex">&nbsp;</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">
@@ -76,7 +76,7 @@
 				<span data-lang="pl">Powr&oacute;t</span>
 			</a></li>
 			-->
-			<li><a href="#page-start" data-icon="home" data-i18n-key="title-application">&nbsp;</a></li>
+			<li><a href="#page-pokedex" data-icon="home" data-i18n-key="Pokedex">&nbsp;</a></li>
 			<li><a href="#page-settings" data-icon="gear">
 				<span data-lang="pl">Ustawienia</span>
 				<span data-lang="en">Settings</span>
@@ -109,28 +109,20 @@
 					<span data-lang="en">About</span>
 				</h2>
 				<div data-lang="pl">
-					<p>mJappis u&#322;atwia tworzenie aplikacji prawdziwie przeno&#347;nych.</p>
+					<p>
+						M&oacute;jPokedex to Pokedex dla Pokemon GO.
+						Opr&oacute;cz samej listy pokemn&oacute;w dost&#281;pne s&#261; te&#380; listy atak&oacute;w danego pokemona
+						wraz DPS (damage per second, czyli obra&#380;enia na sekund&#281;).
+					</p>
 					<p>Wersja aplikacji 0.1.1.</p>
-					<ol>
-						<li>Utw&oacute;rz model w JSON.</li>
-						<li>Dopisz widoki do HTML.</li>
-						<li>Dodaj interakcje w kontrolerach.</li>
-						<li>Testuj w przegl&#261;darce.</li>
-						<li>Zapakuj.</li>
-						<li>Uruchom gdzie chcesz.</li>
-					</ol>
 				</div>
 				<div data-lang="en">
-					<p>mJappis makes apps that move.</p>
+					<p>
+						MyPokedex is a Pokedex for Pokemon GO.
+						It includes available attacks 
+						and DPS (damage per second) calculation for each pokemon.
+					</p>
 					<p>App version 0.1.1.</p>
-					<ul>
-						<li>Create model with JSON.</li>
-						<li>Append views to HTML</li>
-						<li>Add interactions in controllers.</li>
-						<li>Test in any browser.</li>
-						<li>Package.</li>
-						<li>Run anywhere.</li>
-					</ul>
 				</div>
 			</div>
 			<div data-role="collapsible" data-collapsed="true">
@@ -139,52 +131,17 @@
 					<span data-lang="en">Terms of usage</span>
 				</h2>
 				<div data-lang="pl">
-					<p>Copyright &copy; 2013 Maciej "Nux" Jaros.</p>
+					<p>Copyright &copy; 2016 Maciej "Nux" Jaros.</p>
 					<p>Licencja <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC-BY-SA</a></p>
 					<p>Informacje na temat autor&oacute;w i licencji dla poszczeg&oacute;lnych bibliotek znajduj&#261; si&#281; w odpowiednich plikach JS oraz CSS.</p>
 				</div>
 				<div data-lang="en">
-					<p>Copyright &copy; 2013 Maciej "Nux" Jaros.</p>
+					<p>Copyright &copy; 2016 Maciej "Nux" Jaros.</p>
 					<p>License <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC-BY-SA</a></p>
 					<p>Libraries copyright and license information is avaiable in the JS and CSS files.</p>
 				</div>
 			</div>
-			<div data-role="collapsible" data-collapsed="false">
-				<h2>
-					<span data-lang="pl">Pytania i odpowiedzi</span>
-					<span data-lang="en">FAQ</span>
-				</h2>
-				<div data-role="collapsible-set" data-theme="d" data-content-theme="d">
-					<div data-role="collapsible">
-						<h3>
-							<span data-lang="pl">Dlaczego nie dzia&#322;a zapis?</span>
-							<span data-lang="en">Why doesn't my data get saved?</span>
-						</h3>
-						<div data-lang="pl">
-							<p>Je&#347;li nie dzia&#322;a zapis, to najprawdopodobniej Twoja kom&oacute;rka nie obs&#322;uguje skrypt&oacute;w JavaScript lub ma ich obs&#322;ug&#281; wy&#322;&#261;czon&#261;. Program wymaga JavaScript do poprawnego dzia&#322;ania.</p>
-						</div>
-						<div data-lang="en">
-							<p>If saving doesn't work then your cellphone doesn't have JavaScript enabled. This application needs JavaScript to work properly.</p>
-						</div>
-					</div>
-					<!--
-					<div data-role="collapsible">
-						<h3>
-							<span data-lang="pl">Pytanie?</span>
-							<span data-lang="en">Question?</span>
-						</h3>
-						<div data-lang="pl">
-							<p>Odp.</p>
-						</div>
-						<div data-lang="en">
-							<p>Ans.</p>
-						</div>
-					</div>
-					-->
-				</div>
-			</div>
 		</div>
-
 	</div><!-- /content -->
 	
 <div data-role="footer" data-position="fixed" data-id="main-navi" data-position-setup="static">
@@ -196,7 +153,7 @@
 				<span data-lang="pl">Powr&oacute;t</span>
 			</a></li>
 			-->
-			<li><a href="#page-start" data-icon="home" data-i18n-key="title-application">&nbsp;</a></li>
+			<li><a href="#page-pokedex" data-icon="home" data-i18n-key="Pokedex">&nbsp;</a></li>
 			<li><a href="#page-settings" data-icon="gear">
 				<span data-lang="pl">Ustawienia</span>
 				<span data-lang="en">Settings</span>
@@ -241,7 +198,7 @@
 				<span data-lang="pl">Powr&oacute;t</span>
 			</a></li>
 			-->
-			<li><a href="#page-start" data-icon="home" data-i18n-key="title-application">&nbsp;</a></li>
+			<li><a href="#page-pokedex" data-icon="home" data-i18n-key="Pokedex">&nbsp;</a></li>
 			<li><a href="#page-settings" data-icon="gear">
 				<span data-lang="pl">Ustawienia</span>
 				<span data-lang="en">Settings</span>

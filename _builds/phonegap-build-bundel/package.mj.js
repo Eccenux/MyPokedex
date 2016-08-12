@@ -56,9 +56,7 @@ window.$mJ = window.mJappisApplication =
 			else {
 				switch (types[key]) {
 					case 'int':
-						try {
-							parameters[key] = parseInt(parameters[key], 10);
-						} catch (e) {}
+						parameters[key] = parseInt(parameters[key], 10);
 					break;
 					case 'str':
 					case 'string':
@@ -120,6 +118,13 @@ window.$mJ = window.mJappisApplication =
 			.html(list)
 			.trigger('create')
 		;
+
+		var isEmpty = list.search(/<li>/) < 0;
+		if (isEmpty) {
+			$listContainer.addClass('list-empty');
+		} else {
+			$listContainer.removeClass('list-empty');
+		}
 
 		try {
 
@@ -203,6 +208,9 @@ window.$mJ = window.mJappisApplication =
 		}
 		for (var i = 0; i < displayLength; i++)
 		{
+			if (items[i] === null) {
+				continue;
+			}
 			html += '<li>';
 			html += '<a data-show-index="'+i+'" href="'+ options.showItemUrlFunction(items[i]) +'">'+ options.listTextFunction(items[i]) +'</a>';
 			if (options.addActionButton && !options.actionItemIgnoreFunction(items[i]))
@@ -948,7 +956,7 @@ window.$mJ = window.mJappisApplication =
 			type      : elType
 			,name     : labelBase+'-'+objectName
 			,value    : _dataPart[objectName]
-			,extraAttributes : []
+			,extraAttributes : ('extraAttributes' in _schemaPart[objectName] ? _schemaPart[objectName].extraAttributes : [])
 			//,jsUpdate : 'window.tmpFormData[\''+_baseObjectName+'\'].'+objectName+' = jQuery(this).val()'
 		};
 		if (elType == 'flip' && typeof(elementOptions.value) == 'string')
@@ -1229,7 +1237,7 @@ window.$mJ = window.mJappisApplication =
 			controllerName = matchedController.replace(/-/g, '_');
 			if (matchedParams)
 			{
-				matchedParams.replace(/[?&]([^?&=]+)=([^?&=]+)/g, function(a, name, value)
+				matchedParams.replace(/[?&]([^?&=]+)=([^?&=]*)/g, function(a, name, value)
 				{
 					parameters[name] = value;
 				});
@@ -1332,10 +1340,18 @@ window.$mJ = window.mJappisApplication =
 {
 	$mJ.controller = new Object();
 // EOC
-	$mJ.controller.PaginationHelper = function () {
+	$mJ.controller.PaginationHelper = function (paginationName) {
 		var _self = this;
+// EOC
+		this.uniquePrefix = 'paginationHelper';
+		if (paginationName) {
+			this.uniquePrefix += paginationName;
+		}
 
 		var tpl = {
+			pageIndexName: function () {
+				return _self.uniquePrefix;
+			},
 			renderOptions: function () {
 				var html = '';
 				for (var i = 0; i < _self.pagesNo; i++) {
@@ -1343,21 +1359,47 @@ window.$mJ = window.mJappisApplication =
 					if (_self.currentPageIndex == i) {
 						selected = "selected='selected'";
 					}
-					html += '<option '+selected+' value="'+i+'">'+(i+1)+'</option>';
+					html += '<option '+selected+' value="'+i+'">'+$mJ.i18n.get('Page')+' '+(i+1)+'</option>';
 				}
 				return html;
 			},
-			smallScreen : function () {
-				if (_self.pagesNo < 2) {
-					return '';
+			renderRadios: function () {
+				var html = '';
+				for (var i = 0; i < _self.pagesNo; i++) {
+					var selected = "";
+					if (_self.currentPageIndex == i) {
+						selected = "checked='checked'";
+					}
+					var name = tpl.pageIndexName();
+					var id = name+i;
+					html += '<input '+selected+' type="radio" id="'+id+'" name="'+name+'" value="'+i+'" />';
+					html += '<label for="'+id+'">'+(i+1)+'</label>';
 				}
+				return html;
+			},
+			manyPages : function () {
 				return ''
 					+'<fieldset class="ui-grid-a">'
 					+'	<div class="ui-block-a"><a data-id="prev" href="" data-role="button" data-icon="arrow-l" data-iconpos="left"  >'+$mJ.i18n.get('Previous')+'</a></div>'
 					+'	<div class="ui-block-b"><a data-id="next" href="" data-role="button" data-icon="arrow-r" data-iconpos="right" >'+$mJ.i18n.get('Next')+'</a></div>'
 					+'</fieldset>'
-					+'<select name="pageIndex">'+tpl.renderOptions()+'</select>'
+					+'<select name="'+tpl.pageIndexName()+'">'+tpl.renderOptions()+'</select>'
 				;
+			},
+			fewPages : function () {
+				return '<fieldset data-role="controlgroup" data-type="horizontal" class="ui-field-contain"><legend>'+$mJ.i18n.get('Page')+':</legend>'+tpl.renderRadios()+'</fieldset>';
+			},
+			singlePage : function () {
+				return '';
+			},
+			smallScreen : function () {
+				if (_self.pagesNo < 2) {
+					return tpl.singlePage();
+				}
+				if (_self.pagesNo <= 9) {
+					return tpl.fewPages();
+				}
+				return tpl.manyPages();
 			}
 		};
 
@@ -1376,10 +1418,21 @@ window.$mJ = window.mJappisApplication =
 		};
 // EOC
 		this.setupControls = function (paginationContainer, onPageIndexChange) {
-			var $pageIndex = $('[name="pageIndex"]', paginationContainer);
-			$pageIndex.unbind().change(function (){
-				onPageIndexChange($pageIndex.val());
-			});
+			var $pageIndex = $('[name="'+tpl.pageIndexName()+'"]', paginationContainer);
+
+			if ($pageIndex.length && $pageIndex[0].nodeName.toLowerCase() === 'select') {
+				$pageIndex.unbind().change(function (){
+					onPageIndexChange($pageIndex.val());
+				});
+			}
+
+			else {
+				$pageIndex.unbind().change(function (){
+					onPageIndexChange($pageIndex.filter(':checked').val());
+				});
+			}
+
+
 			$('[data-id="prev"]', paginationContainer).unbind().click(function (){
 				var index = _self.currentPageIndex;
 				if (index > 0) {
@@ -1431,6 +1484,8 @@ window.$mJ = window.mJappisApplication =
 // EOC
 	$mJ.geo.mapUrl = 'http://maps.google.com/maps/api/staticmap?center=%%lat%%,%%lon%%&markers=%%lat%%,%%lon%%&maptype=mobile&sensor=false&zoom=10&size=200x200';
 // EOC
+	$mJ.geo.mapUrlLink = 'http://maps.google.pl/maps?center=%%lat%%,%%lon%%&daddr=%%lat%%,%%lon%%&z=10';
+// EOC
 	$mJ.geo.loadMap = function(latitude, longitude, imageParent)
 	{
 		if (typeof(imageParent) == 'string') {
@@ -1461,13 +1516,20 @@ window.$mJ = window.mJappisApplication =
 
 		else
 		{
-			var url = $mJ.geo.mapUrl;
-
-			url = url
+			var imageSrc = $mJ.geo.mapUrl
 				.replace(/%%lat%%/g, ll.lat)
 				.replace(/%%lon%%/g, ll.lon)
 			;
-			imageParent.html('<a href="'+url+'" target="_blank"><img src="'+url+'" alt="'+$mJ.i18n.get('map')+'"></a>');
+			if (typeof($mJ.geo.mapUrlLink) !== 'string') {
+				$mJ.geo.mapUrlLink = $mJ.geo.mapUrl;
+			}
+			var linkHref = $mJ.geo.mapUrlLink
+				.replace(/%%lat%%/g, ll.lat)
+				.replace(/%%lon%%/g, ll.lon)
+			;
+			var inAppBrowserOpenBySystemAction = 'onclick="window.open(this.href, \'_system\', \'location=yes,enableViewportScale=yes\'); return false;"';
+
+			imageParent.html('<a href="'+linkHref+'" '+inAppBrowserOpenBySystemAction+' target="_blank"><img src="'+imageSrc+'" alt="'+$mJ.i18n.get('map')+'"></a>');
 		}
 	};
 // EOC

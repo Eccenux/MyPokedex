@@ -616,7 +616,7 @@ function CompassHelper(mockingEnabled) {
 		}
 
 		var watchID;
-		LOG.info('watchHeading, ', watchID);
+		LOG.info('watchHeading, watchID: ', watchID);
 
 		// run native (or mock)
 		if (compassType == 'native') {

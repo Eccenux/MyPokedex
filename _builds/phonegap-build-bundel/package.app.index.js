@@ -1,4 +1,34 @@
 
+// pokedex.js, line#0
+
+// EOC
+// EOC
+(function($, $mJ)
+{
+	//var LOG = new Logger('controller.settings');
+// EOC
+	$mJ.controller.pokedex = function()
+	{
+
+		$mJ.makeList ('#page-pokedex', '#pokedex-list-container', pgoData.pokedex, {
+			'listTextFunction' : listTextFunction,
+			addActionButton : true
+		});
+	};
+
+	function listTextFunction(item)
+	{
+		return "\
+			<h2>#" + item.number + " " + $mJ.extra.htmlSpecialChars(item.name)+"</h2>\
+			<p>\
+				<span class='type-"+item.type1+"'>"+item.type1+"</span>\
+				<span class='type-"+item.type2+"'>"+item.type2+"</span>\
+			</p>\
+		";
+	};
+
+})(jQuery, window.mJappisApplication);
+// pokedex.js, EOF
 // settings.js, line#0
 
 // EOC

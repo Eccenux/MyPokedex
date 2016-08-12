@@ -2168,14 +2168,21 @@ window.internetShare = new InternetShare();
  *   MIT License http://www.opensource.org/licenses/mit-license
  *   GPL v3 http://opensource.org/licenses/GPL-3.0
  *
- * @param {Element} baseElement
+ * @param {Element} baseElement Conatainer in which to do bindings.
+ * @param {Boolean} debug If true then extra debug information will be given.
  *
  * @class {DataBindings}
  */
-function DataBindings(baseElement)
+function DataBindings(baseElement, debug)
 {
 // EOC
 	var _self = this;
+
+	var LOG = new Logger('DataBindings');
+	LOG.enabled = false;
+	if (debug) {
+		LOG.enabled = true;
+	}
 // EOC
 	this.configuration = {
 // EOC
@@ -2310,13 +2317,14 @@ function DataBindings(baseElement)
 		if (text == null) {
 			return "";
 		}
-		var isbnUrl = 'http://alpha.bn.org.pl/search*pol/i?SEARCH=%ISBN%&searchscope=5';
+		var isbnUrl = 'https://www.google.pl/search?q=ISBN+%ISBN%';
 		var contentTpl = '<a href="%URL%" target="_blank"'
 			+' ' + _self.configuration.inAppBrowserActionAttribute
-			+'>%ISBN%</a>';
+			+'>%ISBNhtml%</a>';
 		text = contentTpl
 			.replace(/%URL%/g, isbnUrl)
 			.replace(/%ISBN%/g, text)
+			.replace(/%ISBNhtml%/g, _htmlSpecialChars(text))
 		;
 		return text;
 	}
@@ -2349,7 +2357,7 @@ function DataBindings(baseElement)
 				+' data-role="button" data-inline="true" '
 				//+' data-phonegap-target="InAppBrowser" '
 				+' %InAppBrowser%'
-				+' data-icon="%PROVIDER-ICON%">%PROVIDER-NAME%</a>';
+				+' data-icon="%PROVIDER-ICON%" %EXTRA-ATTRIBUTES%>%PROVIDER-NAME%</a>';
 		var providers = _self.configuration.shareProviders;
 		// generate content
 		for (var i = 0; i < providers.length; i++) {
@@ -2370,6 +2378,7 @@ function DataBindings(baseElement)
 
 			content += tmpTpl
 				.replace(/%URL%/g, shareUrl)
+				.replace(/%EXTRA-ATTRIBUTES%/g, ('extraAttributes' in provider ? provider.extraAttributes : ''))
 				.replace(/%PROVIDER-ICON%/g, provider.icon)
 				.replace(/%PROVIDER-NAME%/g, provider.name)
 			;
@@ -2418,6 +2427,8 @@ function DataBindings(baseElement)
 // EOC
 	this.bind = function(dataObject)
 	{
+		LOG.info('bind: ', dataObject);
+		LOG.info('baseElement: ', baseElement);
 		$('*[data-binding-key]', baseElement).each(function()
 		{
 			var key = this.getAttribute('data-binding-key');
@@ -2439,14 +2450,17 @@ function DataBindings(baseElement)
 				if (transform.insertsHtml) {
 					$this.trigger('create');
 				}
+// EOC
 			// fallback (SHOULD NOT happen)
 			} else {
+				LOG.warn('fallback content: ', content);
 				this.innerHTML = content + '#';
 			}
 		});
 		$('*[data-binding-hide-on-empty]', baseElement).each(function()
 		{
 			var keys = this.getAttribute('data-binding-hide-on-empty').split(',');
+			LOG.info('hide-on-empty: ', keys);
 			var areEmpty = true;
 			for (var i = 0; i < keys.length; i++) {
 				var key = keys[i];
@@ -2457,8 +2471,10 @@ function DataBindings(baseElement)
 			}
 			if (areEmpty) {
 				$(this).hide();
+				LOG.info('hidden');
 			} else {
 				$(this).show();
+				LOG.info('shown');
 			}
 		});
 		$('*[data-binding-key-attribute]', baseElement).each(function()
@@ -2712,7 +2728,7 @@ function SimpleCssParser() {
 /**
  * Autocomplete helper for JQM.
  *
- * Copyright © 2014 Maciej Nux Jaros.
+ * Copyright © 2014-2016 Maciej Nux Jaros.
  * @license MIT
  *
  * @requires jQuery
@@ -2765,6 +2781,8 @@ function AutocompleteHelper($, $ul, $input, $clear, deferredGet)
 		$ul.html( "" );
 		$ul.listview( "refresh" );
 	}
+	// allow public access
+	this.clearList = clear;
 // EOC
 	function onSelect() {
 		var text = $(this).text();
@@ -2799,11 +2817,14 @@ function AutocompleteHelper($, $ul, $input, $clear, deferredGet)
 		var html = "";
 		//var html = (list.length < 1 ? "" : "<li>" + list.join('</li><li>') + "</li>");
 		if (list.length) {
-			var re = new RegExp("(" + text.replace(escapeRegExp, "\\$&") + ")", 'gi');
+			var parsedList = [];	// MUST copy so that the list remain unchanged
+			var re = new RegExp("(" + htmlSpecialChars(text).replace(escapeRegExp, "\\$&") + ")", 'gi');
 			for (var i=0; i<list.length; i++) {
-				list[i] = list[i].replace(re, '<b>$1</b>');
+				var value = htmlSpecialChars(list[i]);
+				value = value.replace(re, '<b>$1</b>');
+				parsedList.push(value);
 			}
-			html = "<li>" + list.join('</li><li>') + "</li>";
+			html = "<li>" + parsedList.join('</li><li>') + "</li>";
 		}
 		$ul
 			.html(html)
@@ -2812,6 +2833,20 @@ function AutocompleteHelper($, $ul, $input, $clear, deferredGet)
 		;
 		$('li', $ul).click(onSelect);
 	}
+// EOC
+	function htmlSpecialChars(text) {
+		if (text === null) {
+			return "";
+		}
+		text = text.toString()
+			.replace(/&/g, '&amp;')
+			.replace(/>/g, '&gt;')
+			.replace(/</g, '&lt;')
+			.replace(/'/g, '&#039;')
+			.replace(/"/g, '&quot;')
+		;
+		return text;
+	};
 }
 // jquery.mobile.autocomplete.js, EOF
 // InnerToggler.js, line#0
