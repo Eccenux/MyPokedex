@@ -36,13 +36,13 @@
 
 	function listTextFunction(item)
 	{
-		return "\
-			<h2>#" + formatDexNumber(item.number) + " " + item.name +"</h2>\
-			<p>\
-				<span class='type-"+item.type1+"'>"+item.type1+"</span>\
-				<span class='type-"+item.type2+"'>"+item.type2+"</span>\
-			</p>\
-		";
+		return ""
+			+"<h2>#" + formatDexNumber(item.number) + " " + item.name +"</h2>"
+			+"<p>"
+				+"<span class='type-"+item.type1+"'>"+item.type1+"</span>"
+				+(item.type2.length<1 ? "": "<span class='type-"+item.type2+"'>"+item.type2+"</span>")
+			+"</p>"
+		;
 	};
 	
 })(jQuery, window.mJappisApplication);
