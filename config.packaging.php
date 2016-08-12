@@ -45,4 +45,6 @@ $buildPackages['app']['packages']['index']['src'] = array(
 	'proxies/*',
 );
 /**/
+// append data to common JS package
+$buildPackages['app']['packages']['common']['src'][] = 'data/*';
 ?>
