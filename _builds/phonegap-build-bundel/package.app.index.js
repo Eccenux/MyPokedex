@@ -19,7 +19,7 @@
 	function listTextFunction(item)
 	{
 		return "\
-			<h2>#" + item.number + " " + $mJ.extra.htmlSpecialChars(item.name)+"</h2>\
+			<h2>#" + item.number + " " + item.name +"</h2>\
 			<p>\
 				<span class='type-"+item.type1+"'>"+item.type1+"</span>\
 				<span class='type-"+item.type2+"'>"+item.type2+"</span>\
