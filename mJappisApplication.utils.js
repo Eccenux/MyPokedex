@@ -273,6 +273,9 @@
 		}
 		for (var i = 0; i < displayLength; i++)
 		{
+			if (items[i] === null) {
+				continue;
+			}
 			html += '<li>';
 			html += '<a data-show-index="'+i+'" href="'+ options.showItemUrlFunction(items[i]) +'">'+ options.listTextFunction(items[i]) +'</a>';
 			if (options.addActionButton && !options.actionItemIgnoreFunction(items[i]))
