@@ -37,6 +37,7 @@
 	function listTextFunction(item)
 	{
 		return ""
+			+"<div class='pokemon-icon pokemon-num"+item.number+"'></div>"
 			+"<h2>#" + formatDexNumber(item.number) + " " + item.name +"</h2>"
 			+"<p>"
 				+"<span class='type-"+item.type1+"'>"+item.type1+"</span>"

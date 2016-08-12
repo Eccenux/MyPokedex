@@ -40,4 +40,5 @@ $buildPackages['app']['packages']['common']['src'][] = 'data/*';
 
 // append extra css to common css package
 $buildPackages['css']['packages']['common']['src'][] = 'types';
+$buildPackages['css']['packages']['common']['src'][] = 'pokemons';
 ?>
