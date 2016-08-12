@@ -1,11 +1,29 @@
-/* on pokedex-like list */
+/* functions */
+// pokeball :-)
+.pokeball-effect(@radius) {
+	border: 2px solid #c71d1d;
+	border-radius: @radius;
+	background-color: white;
+}
+// pokeball icons size
+.pokeball-icon-size(@size) {
+	width: @size;
+	height: @size;
+	background-size: @size * 10;
+}
+
+/* extra formatting */
+// on pokedex-like list
 ul .pokemon-icon {
 	float: left;
 	margin-right: 1em;
-	// pokeball :-)
-	border: 2px solid #c71d1d;
-	border-radius: 64px;
-	background-color: white;
+	.pokeball-effect(64px);
+}
+// on pokemon card
+.pokemon-card .pokemon-icon {
+	margin: 0 auto;
+	.pokeball-effect(128px);
+	.pokeball-icon-size(128px);
 }
 
 /* sprites */
@@ -13,9 +31,7 @@ ul .pokemon-icon {
     background-image: url(images/pokemon-all-medium.png);
     background-repeat: no-repeat;
     display: block;
-	width: 64px;
-	height: 64px;
-	background-size: 640px;
+	.pokeball-icon-size(64px);
 }
 .pokemon-num1 {background-position: 0px 0px}
 .pokemon-num2 {background-position: -64px 0px}

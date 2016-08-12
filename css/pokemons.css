@@ -1,10 +1,20 @@
-/* on pokedex-like list */
+/* functions */
+/* extra formatting */
 ul .pokemon-icon {
   float: left;
   margin-right: 1em;
   border: 2px solid #c71d1d;
   border-radius: 64px;
   background-color: white;
+}
+.pokemon-card .pokemon-icon {
+  margin: 0 auto;
+  border: 2px solid #c71d1d;
+  border-radius: 128px;
+  background-color: white;
+  width: 128px;
+  height: 128px;
+  background-size: 1280px;
 }
 /* sprites */
 .pokemon-icon {
