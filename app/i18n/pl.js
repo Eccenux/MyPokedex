@@ -25,7 +25,7 @@
  */
 window.mJappisApplication.i18n.pl = {"":""
 	// app basic
-	,"title-application" : "Apka"
+	,"title-application" : "MójPokedex"
 	// varia
 	,"Page" : "Strona"
 	,"Previous" : "Wstecz"

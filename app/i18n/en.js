@@ -25,7 +25,7 @@
  */
 window.mJappisApplication.i18n.en = {"":""
 	// app basic
-	,"title-application" : "App"
+	,"title-application" : "MyPokedex"
 	// errors
 	,"unexpected error" : "Unexpected error!"
 	// page (or icon) titles

@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id        = "mjappis.example"
+	id        = "pl.enux.MyPokedex"
 	versionCode="00101"
 	version   = "0.1.1">
 	<!--
 		versionCode = Mmmbb : Major.minor.build
 	-->
 	
-    <name>mJappis example</name>
+    <name>MyPokedex</name>
 
     <description>
-        This is just an example.
+        MyPokedex is a Pokedex for Pokemon GO. It includes available attacks and DPS calculation for each pokemon.
     </description>
 
-    <author href="http://www.mjappis.org" email="eccenux+mjex@gmail.com">
+    <author href="https://enux.pl" email="eccenux+pokedex@gmail.com">
         Maciej Nux Jaros
     </author>
 
 	<!-- Mobile OS to be build -->
-	<gap:platform name="ios" />
 	<gap:platform name="android" />
 
 	<!-- PG version -->
