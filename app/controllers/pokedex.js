@@ -23,14 +23,21 @@
 		// list
 		$mJ.makeList ('#page-pokedex', '#pokedex-list-container', pgoData.pokedex, {
 			'listTextFunction' : listTextFunction,
-			addActionButton : true
+			addActionButton : false
 		});
 	};
+
+	function formatDexNumber(num)
+	{
+		var str = "" + num;
+		var pad = "000";
+		return pad.substring(0, pad.length - str.length) + str;
+	}
 
 	function listTextFunction(item)
 	{
 		return "\
-			<h2>#" + item.number + " " + item.name +"</h2>\
+			<h2>#" + formatDexNumber(item.number) + " " + item.name +"</h2>\
 			<p>\
 				<span class='type-"+item.type1+"'>"+item.type1+"</span>\
 				<span class='type-"+item.type2+"'>"+item.type2+"</span>\
