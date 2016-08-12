@@ -23,6 +23,9 @@
 		// list
 		$mJ.makeList ('#page-pokedex', '#pokedex-list-container', pgoData.pokedex, {
 			'listTextFunction' : listTextFunction,
+			'showItemUrlFunction' : function (item) {
+				return '#page-pokemonCard?id='+ item.number;
+			},
 			addActionButton : false
 		});
 	};
