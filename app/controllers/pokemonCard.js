@@ -26,14 +26,23 @@
 		var page = document.getElementById('page-pokemonCard');
 
 		// not found?
-		if (item == null)
-		{
+		if (item == null) {
 			$('.error-message', page).html($mJ.i18n.get('unexpected error'));
+			$('.error-message', page).show();
+			$('.post-validation-content', page).hide();
 			return;
+		} else {
+			$('.error-message', page).hide();
+			$('.post-validation-content', page).show();
 		}
+
+		// extra data
+		item.type1Class = "type-"+item.type1;
+		item.type2Class = "type-"+item.type2;
 		
-		//
-		$('.error-message', page).html($mJ.i18n.get(item.name));
+		// binding
+		var dataBinding = new DataBindings(page);
+		dataBinding.bind(item);
 	};
 
 	/**
