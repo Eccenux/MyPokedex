@@ -44,6 +44,14 @@
 		// binding
 		var dataBinding = new DataBindings(page);
 		dataBinding.bind(item);
+
+		// attacks
+		var html = tpl.main(getAttacks(item));
+		$('.attacks-container', page)
+			.empty()
+			.html(html)
+			.trigger('create')
+		;
 	};
 
 	/**
@@ -63,4 +71,80 @@
 		}
 		return item;
 	}
+
+	/**
+	 * Get this pokemon attacks.
+	 *
+	 * @param {Object} pokemon Pokemon item.
+	 * @returns {Array} List of attacks.
+	 */
+	function getAttacks(pokemon)
+	{
+		var attacks = [];
+		suplementAttacks(attacks, pokemon.fast);
+		suplementAttacks(attacks, pokemon.charge);
+		for (var i = 0; i < pokemon.fast.length; i++) {
+		}
+		return attacks;
+	}
+	/**
+	 * Append attacks data with given names.
+	 * 
+	 * @param {Array} attacks List of attacks to suplement.
+	 * @param {Array} attackNames Names array.
+	 */
+	function suplementAttacks(attacks, attackNames) {
+		for (var i = 0; i < attackNames.length; i++) {
+			if (attackNames[i] in pgoData.attacks) {
+				var attack = $.extend({}, pgoData.attacks[attackNames[i]]);	// clone
+				attacks.push(attack);
+			} else {
+				LOG.warn('Unknown attack: ', attackNames[i]);
+			}
+		}
+	}
+
+	/**
+	 * Attacks template.
+	 *
+	 * @type Object
+	 */
+	var tpl = {
+		render: function (items, renderer) {
+			var html = '';
+			for (var i = 0; i < items.length; i++) {
+				html += renderer(items[i]);
+			}
+			return html;
+		},
+		main: function (attacks) {
+			return ''
+				+'	<table data-role="table" \n\
+						data-mode="columntoggle" data-column-btn-text="' + $mJ.i18n.get('Columns...') + '" \n\
+						class="ui-responsive table-stripe ui-shadow">'
+				+'	  <thead>'
+						+'<th data-priority_="">' + $mJ.i18n.get('Name')    + '</th>'
+						+'<th data-priority="2">' + $mJ.i18n.get('Category') + '</th>'
+						+'<th data-priority="1">' + $mJ.i18n.get('Type')    + '</th>'
+						+'<th data-priority_="">' + $mJ.i18n.get('DPS')+ '</th>'
+				+'	  </thead>'
+				+'	  <tbody>'
+						+ tpl.render(attacks, tpl.attack)
+				+'	  </tbody>'
+				+  '</table>'
+			;
+		},
+		attack: function (attack) {
+			// {"Cross Chop":{"name":"Cross Chop","category":"Charge","type":"fighting","dps":30,"duration":2}
+			return ''
+				+'<tr class="attack ' + (attack.category) + '">'
+					+'<td>' + (attack.name) + '</td>'
+					+'<td>' + (attack.category) + '</td>'
+					+'<td>' + (attack.type) + '</td>'
+					+'<td>' + (attack.dps) + '</td>'
+				+'</tr>'
+			;
+		}
+	};
+
 })(jQuery, window.mJappisApplication);
