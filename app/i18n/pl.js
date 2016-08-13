@@ -37,6 +37,11 @@ window.mJappisApplication.i18n.pl = {"":""
 	,"Columns..." : "Kolumny..."
 	,"Share URL" : "Podziel się linkiem"
 
+	,'Name' : "Nazwa"
+	,'Category' : "Kategoria"
+	,'Type' : "Typ"
+	,'DPS' : "DPS"
+
 	// errors
 	,"unexpected error" : "Niespodziewany błąd!"
 	// page (or icon) titles
