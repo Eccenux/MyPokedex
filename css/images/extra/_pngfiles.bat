@@ -9,6 +9,8 @@ CALL _svg2png.bat scanner-black.svg %tempset_OUTPATH%scanner-black.png 14
 CALL _svg2png.bat scanner-white.svg %tempset_OUTPATH%scanner-white.png 14
 CALL _svg2png.bat stack-black.svg %tempset_OUTPATH%stack-black.png 14
 CALL _svg2png.bat stack-white.svg %tempset_OUTPATH%stack-white.png 14
+CALL _svg2png.bat fast-black.svg %tempset_OUTPATH%fast-black.png 14
+CALL _svg2png.bat fast-white.svg %tempset_OUTPATH%fast-white.png 14
 
 CALL _svg2png.bat facebook-black.svg %tempset_OUTPATH%facebook-black.png 14
 CALL _svg2png.bat google-plus-black.svg %tempset_OUTPATH%google-plus-black.png 14
