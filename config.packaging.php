@@ -18,7 +18,7 @@
 // Note! Replace only things you wish to change in default configuration.
 //==========================================
 // PhoneGap widget config file path (relative to $strBaseScriptDir)
-$widgetConfigFilePath = 'PhoneGap-config.xml';
+$widgetConfigFilePath = 'config-PhoneGap.xml';
 
 // append data to common JS package
 $buildPackages['app']['packages']['common']['src'][] = 'data/*';

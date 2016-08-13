@@ -30,7 +30,7 @@
 	if ($oFileHelper->exists('displayCode.html')) {
 		$oFileHelper->copy('displayCode.html', $strBundleRoot.'displayCode.html');
 	}
-	$oFileHelper->copy($widgetConfigFilePath, $strBundleRoot.$widgetConfigFilePath);
+	$oFileHelper->copy($widgetConfigFilePath, $strBundleRoot.$widgetConfigFileDestinationName);
 	
 	//==========================================
 	// HTML & widget config

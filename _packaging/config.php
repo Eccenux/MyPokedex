@@ -13,6 +13,9 @@ date_default_timezone_set('Europe/Paris');
 $strBundleRoot = '_builds/phonegap-build-bundel/';
 // PhoneGap widget config file path (relative to $strBaseScriptDir)
 $widgetConfigFilePath = 'config.xml';
+// destination name (should not be changed)
+$widgetConfigFileDestinationName = 'config.xml';
+
 // Android test build (optional)
 //$strTestBuildRoot = '_builds/phonegap-android-project/assets/www/';
 // Path in which to create a zip bundle (optional)
