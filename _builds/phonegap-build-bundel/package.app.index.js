@@ -72,6 +72,14 @@
 
 		var dataBinding = new DataBindings(page);
 		dataBinding.bind(item);
+
+
+		var html = tpl.main(getAttacks(item));
+		$('.attacks-container', page)
+			.empty()
+			.html(html)
+			.trigger('create')
+		;
 	};
 // EOC
 	function getItem(parameters)
@@ -85,6 +93,81 @@
 		}
 		return item;
 	}
+// EOC
+	function getAttacks(pokemon)
+	{
+		var attacks = [];
+		suplementAttacks(attacks, pokemon.fast, pokemon);
+		suplementAttacks(attacks, pokemon.charge, pokemon);
+		for (var i = 0; i < pokemon.fast.length; i++) {
+		}
+		return attacks;
+	}
+// EOC
+	function suplementAttacks(attacks, attackNames, pokemon) {
+		for (var i = 0; i < attackNames.length; i++) {
+			if (attackNames[i] in pgoData.attacks) {
+				var attack = $.extend({}, pgoData.attacks[attackNames[i]]);
+				if (isStab(attack, pokemon)) {
+					attack.dps *= pgoData.config.stabMultiplier;
+					attack.hasStab = true;
+				} else {
+					attack.hasStab = false;
+				}
+				attacks.push(attack);
+			} else {
+				LOG.warn('Unknown attack: ', attackNames[i]);
+			}
+		}
+	}
+// EOC
+	function isStab(attack, pokemon)
+	{
+		if (pokemon.type1 === attack.type
+		 || pokemon.type2 === attack.type) {
+			return true;
+		}
+		return false;
+	}
+// EOC
+	var tpl = {
+		render: function (items, renderer) {
+			var html = '';
+			for (var i = 0; i < items.length; i++) {
+				html += renderer(items[i]);
+			}
+			return html;
+		},
+		main: function (attacks) {
+			return ''
+				+'	<table data-role="table" \n\
+						data-mode="columntoggle" data-column-btn-text="' + $mJ.i18n.get('Columns...') + '" \n\
+						class="ui-responsive table-stripe ui-shadow">'
+				+'	  <thead>'
+						+'<th data-priority_="">' + $mJ.i18n.get('Name')    + '</th>'
+						+'<th data-priority="2">' + $mJ.i18n.get('Category') + '</th>'
+						+'<th data-priority="1">' + $mJ.i18n.get('Type')    + '</th>'
+						+'<th data-priority_="">' + $mJ.i18n.get('DPS')+ '*</th>'
+				+'	  </thead>'
+				+'	  <tbody>'
+						+ tpl.render(attacks, tpl.attack)
+				+'	  </tbody>'
+				+  '</table>'
+			;
+		},
+		attack: function (attack) {
+			// {"Cross Chop":{"name":"Cross Chop","category":"Charge","type":"fighting","dps":30,"duration":2}
+			return ''
+				+'<tr class="attack ' + (attack.category) + ' ' + (attack.hasStab ? 'stab' : '') + '">'
+					+'<td>' + (attack.name) + '</td>'
+					+'<td>' + (attack.category) + '</td>'
+					+"<td><span class='type-"+attack.type+"'>"+attack.type+"</span></td>"
+					+'<td>' + (attack.dps.toFixed(1)) + '</td>'
+				+'</tr>'
+			;
+		}
+	};
+
 })(jQuery, window.mJappisApplication);
 // pokemonCard.js, EOF
 // settings.js, line#0

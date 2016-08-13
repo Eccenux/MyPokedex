@@ -220,7 +220,7 @@
 		<h1 data-binding-key="name">Pokemon</h1>
 	</div><!-- /header -->
 
-	<div data-role="content">
+	<div data-role="content" class="pokemon-card pokemon-icons-large">
 		<div class="error-message"></div>
 		<div class="post-validation-content" style="display: none">
 			<div data-binding-key-attribute="imageClass:class"></div>
@@ -228,6 +228,21 @@
 			<span data-binding-hide-on-empty="type2">
 				<span data-binding-key="type2" data-binding-key-attribute="type2Class:class"></span>
 			</span>
+			<div class="attacks-container"></div>
+			<div data-lang="pl">
+				<p>
+					<strong>*) DPS</strong> (<em>damage per second</em>, obra&#380;enia na sekund&#281;)
+					&mdash; w tej kolumnie uwzgl&#281;dniony zosta&#322; bonus dla atak&oacute;w tego samego typu co pokemon,
+					czyli tzw. STAB (<em>same type attack bonus</em>).
+				</p>
+			</div>
+			<div data-lang="en">
+				<p>
+					<strong>*) DPS</strong> (damage per second)
+					&mdash; note that the column inclundes bonus for attacks of the same type as the pokemon,
+					so called STAB (<em>same type attack bonus</em>)
+				</p>
+			</div>
 		</div>
 	</div><!-- /content -->
 

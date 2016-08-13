@@ -79,6 +79,11 @@ window.mJappisApplication.i18n.pl = {"":""
 	,"Columns..." : "Kolumny..."
 	,"Share URL" : "Podziel się linkiem"
 
+	,'Name' : "Nazwa"
+	,'Category' : "Kategoria"
+	,'Type' : "Typ"
+	,'DPS' : "DPS"
+
 
 	,"unexpected error" : "Niespodziewany błąd!"
 
@@ -314,6 +319,22 @@ pgoData.attacks =
 ,"Wrap":{"name":"Wrap","category":"Charge","type":"normal","dps":6.3,"duration":4}
 ,"Splash":{"name":"Splash","category":"Fast","type":"water","dps":0,"duration":1.23}}
 // attacks.js, EOF
+// config.js, line#0
+pgoData.config = {
+	stabMultiplier : 1.25,
+	effectivenesMultipliers : {
+		super : 1.25,
+		neutral : 1,
+		notVery : 0.75,
+
+		superNeutral   : 1.25,
+		superSuper     : 1.25,
+		superNotVery   : 1,
+		notVeryNotVery : 0.75,
+		notVeryNeutral : 0.75,
+	}
+};
+// config.js, EOF
 // pokedex.js, line#0
 pgoData.pokedex =
 [null,{"number":1,"name":"Bulbasaur","type1":"grass","type2":"poison","fast":["Vine Whip","Tackle"],"charge":["Sludge Bomb","Seed Bomb","Power Whip"]}
