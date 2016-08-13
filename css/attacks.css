@@ -1,0 +1,14 @@
+/**
+	Attacks table customization.
+*/
+.attack.Fast td:first-child:after {
+  content: " ";
+  padding-left: .5em;
+  background-image: url("images/extra/fast-black.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+/*# sourceMappingURL=attacks.css.map */

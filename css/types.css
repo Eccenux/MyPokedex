@@ -1,0 +1,57 @@
+/* 
+    Pokemon/attack types
+*/
+.type-bug,
+.type-dark,
+.type-dragon,
+.type-electric,
+.type-fairy,
+.type-fighting,
+.type-fire,
+.type-flying,
+.type-ghost,
+.type-grass,
+.type-ground,
+.type-ice,
+.type-normal,
+.type-poison,
+.type-psychic,
+.type-rock,
+.type-steel,
+.type-water
+{
+	border: 2px solid rgba(90, 0, 0, .4);
+	border-radius: .4em;
+	display: inline-block;
+	padding: .1em .4em;
+	margin-right: .5em;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	color: whitesmoke;
+}
+/* light backgrounds */
+.type-electric,
+.type-ice
+{
+	text-shadow: rgb(167, 167, 167) 0.1em 0.1em 0.2em;
+	color: black;
+	font-weight: bold;
+}
+
+.type-bug {background-color: #3c9950}
+.type-dark {background-color: #595978}
+.type-dragon {background-color: #62cad9}
+.type-electric {background-color: #fafa72}
+.type-fairy {background-color: #e91368}
+.type-fighting {background-color: #fd4b5a}
+.type-fire {background-color: #ef6239}
+.type-flying {background-color: #94b2c7}
+.type-ghost {background-color: #906791}
+.type-grass {background-color: #27cb50}
+.type-ground {background-color: #6e491f}
+.type-ice {background-color: #d8f0fa}
+.type-normal {background-color: #ca98a6}
+.type-poison {background-color: #9b69da}
+.type-psychic {background-color: #f71d92}
+.type-rock {background-color: #8b3e22}
+.type-steel {background-color: #43bd94}
+.type-water {background-color: #85a8fb}
