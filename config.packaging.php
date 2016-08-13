@@ -42,4 +42,8 @@ $buildPackages['app']['packages']['common']['src'][] = 'data/*';
 $buildPackages['css']['packages']['common']['src'][] = 'types';
 $buildPackages['css']['packages']['common']['src'][] = 'pokemons';
 $buildPackages['css']['packages']['common']['src'][] = 'attacks';
+
+// replace extra libs for index
+$buildPackages['libs']['packages']['index']['src'] = array();
+
 ?>

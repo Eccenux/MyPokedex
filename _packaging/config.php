@@ -97,9 +97,7 @@ $buildPackages = array(
 					'ControllerIgnorance',
 					// mJ optional (but advised)
 					'share', 'dataBindings',
-					'SimpleCssParser', 'polycalc', // 'jquery.ba-resize',
 					'jquery.mobile.autocomplete',
-					'InnerToggler',
 				),
 			),
 			// extra for index
@@ -144,8 +142,6 @@ $buildPackages = array(
 					'forms',
 					'setup',
 					'controller._base',
-					// mJ optional
-					'utils.geo',
 				),
 			),
 		),
