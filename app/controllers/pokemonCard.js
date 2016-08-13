@@ -140,7 +140,7 @@
 				+'<tr class="attack ' + (attack.category) + '">'
 					+'<td>' + (attack.name) + '</td>'
 					+'<td>' + (attack.category) + '</td>'
-					+'<td>' + (attack.type) + '</td>'
+					+"<td><span class='type-"+attack.type+"'>"+attack.type+"</span></td>"
 					+'<td>' + (attack.dps) + '</td>'
 				+'</tr>'
 			;
