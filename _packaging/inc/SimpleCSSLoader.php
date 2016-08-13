@@ -9,6 +9,7 @@ class SimpleCSSLoader extends SimpleJSLoader
 	function __construct($strBaseScriptDir)
 	{
 		$this->isRemoveInlineComments = false;
+		$this->isAddSemicolonOnEof = false;
 
 		parent::__construct($strBaseScriptDir);
 	}

@@ -39,6 +39,11 @@ class SimpleJSLoader
 	 */
 	var $isRemoveMultiComments = true;
 	/**
+	 * add semicolon on file end if not present
+	 * @var boolean
+	 */
+	var $isAddSemicolonOnEof = true;
+	/**
 	 * If true then line number will not be added in places where multiline comments were removed.
 	 *
 	 * Makes package a bit worse for debugging, but you will have better diffs for packages.
@@ -281,7 +286,10 @@ class SimpleJSLoader
 		}
 		
 		// add semicolon if not present
-		$strCode = preg_replace("#([^\s};])\s*$#", "$1;\n", $strCode);
+		if ($this->isAddSemicolonOnEof)
+		{
+			$strCode = preg_replace("#([^\s};])\s*$#", "$1;\n", $strCode);
+		}
 		
 		return $strCode;
 	}
