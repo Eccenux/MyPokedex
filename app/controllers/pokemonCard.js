@@ -149,7 +149,7 @@
 						+'<th data-priority_="">' + $mJ.i18n.get('Name')    + '</th>'
 						+'<th data-priority="2">' + $mJ.i18n.get('Category') + '</th>'
 						+'<th data-priority="1">' + $mJ.i18n.get('Type')    + '</th>'
-						+'<th data-priority_="">' + $mJ.i18n.get('DPS')+ '</th>'
+						+'<th data-priority_="">' + $mJ.i18n.get('DPS')+ '*</th>'
 				+'	  </thead>'
 				+'	  <tbody>'
 						+ tpl.render(attacks, tpl.attack)
