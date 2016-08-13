@@ -2,8 +2,8 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id        = "pl.enux.MyPokedex"
-	versionCode="00101"
-	version   = "0.1.1">
+	versionCode="00200"
+	version   = "0.2.0">
 	<!--
 		versionCode = Mmmbb : Major.minor.build
 	-->
@@ -22,10 +22,17 @@
 	<gap:platform name="android" />
 
 	<!-- PG version -->
-	<preference name="phonegap-version" value="3.1.0" />
+	<preference name="phonegap-version" value="cli-6.0.0" />
 
-	<!-- InAppBrowser -->
-	<gap:plugin name="org.apache.cordova.inappbrowser" />
+	<!--
+		plugins
+		
+		info:
+		<del>https://build.phonegap.com/plugins</del>
+		https://cordova.apache.org/plugins/?platforms=cordova-android%2Ccordova-ios
+	-->
+	<!-- InAppBrowser https://www.npmjs.com/package/cordova-plugin-inappbrowser -->
+	<gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.3.0" />
 	<preference name="EnableViewportScale" value="true" />
 	
 	<!-- icons -->
@@ -45,6 +52,4 @@
 	-->
 	<preference name="permissions" value="none"/>
 	
-	<!-- Cross domain AJAX access; * to any domain -->
-	<access origin="*" />
 </widget>
