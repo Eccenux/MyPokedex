@@ -81,8 +81,8 @@
 	function getAttacks(pokemon)
 	{
 		var attacks = [];
-		suplementAttacks(attacks, pokemon.fast);
-		suplementAttacks(attacks, pokemon.charge);
+		suplementAttacks(attacks, pokemon.fast, pokemon);
+		suplementAttacks(attacks, pokemon.charge, pokemon);
 		for (var i = 0; i < pokemon.fast.length; i++) {
 		}
 		return attacks;
@@ -92,16 +92,39 @@
 	 * 
 	 * @param {Array} attacks List of attacks to suplement.
 	 * @param {Array} attackNames Names array.
+	 * @param {Object} pokemon Pokemon item (for stab calculation).
 	 */
-	function suplementAttacks(attacks, attackNames) {
+	function suplementAttacks(attacks, attackNames, pokemon) {
 		for (var i = 0; i < attackNames.length; i++) {
 			if (attackNames[i] in pgoData.attacks) {
 				var attack = $.extend({}, pgoData.attacks[attackNames[i]]);	// clone
+				if (isStab(attack, pokemon)) {
+					attack.dps *= pgoData.config.stabMultiplier;
+					attack.hasStab = true;
+				} else {
+					attack.hasStab = false;
+				}
 				attacks.push(attack);
 			} else {
 				LOG.warn('Unknown attack: ', attackNames[i]);
 			}
 		}
+	}
+
+	/**
+	 * Check if attack is has STAB for given pokemon.
+	 * 
+	 * @param {Object} attack Attack item.
+	 * @param {Object} pokemon Pokemon item.
+	 * @returns {Boolean}
+	 */
+	function isStab(attack, pokemon)
+	{
+		if (pokemon.type1 === attack.type
+		 || pokemon.type2 === attack.type) {
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -137,11 +160,11 @@
 		attack: function (attack) {
 			// {"Cross Chop":{"name":"Cross Chop","category":"Charge","type":"fighting","dps":30,"duration":2}
 			return ''
-				+'<tr class="attack ' + (attack.category) + '">'
+				+'<tr class="attack ' + (attack.category) + ' ' + (attack.hasStab ? 'stab' : '') + '">'
 					+'<td>' + (attack.name) + '</td>'
 					+'<td>' + (attack.category) + '</td>'
 					+"<td><span class='type-"+attack.type+"'>"+attack.type+"</span></td>"
-					+'<td>' + (attack.dps) + '</td>'
+					+'<td>' + (attack.dps.toFixed(1)) + '</td>'
 				+'</tr>'
 			;
 		}
