@@ -29,8 +29,8 @@ App Copyright © 2016 Maciej "Nux" Jaros.
 
 License [CC-BY](http://creativecommons.org/licenses/by/3.0/).
 
-Libraries copyright and license information is avaiable in the JS and CSS files.
+Libraries copyright and license information is available in the JS and CSS files.
 
-Note! Pokemon images are owned by the Niantic and The Pokemon Company. They are used here under the fair use rules. This application is non-profit and purely informational.
+**Note!** Pokemon images are owned by the Niantic and The Pokemon Company. They are used here under the *fair use* rules. This application is non-profit and purely informational.
 
-Also note that this application is not associated with the Niantic or The Pokemon Company.
+Also note that this application **is not** associated with the Niantic or The Pokemon Company.
