@@ -32,8 +32,10 @@
 		https://cordova.apache.org/plugins/?platforms=cordova-android%2Ccordova-ios
 	-->
 	<!-- InAppBrowser https://www.npmjs.com/package/cordova-plugin-inappbrowser -->
+	<!--
 	<gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.3.0" />
 	<preference name="EnableViewportScale" value="true" />
+	-->
 	
 	<!-- icons -->
 	<icon src="logo/logo128.png" default="true" />
