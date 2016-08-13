@@ -17,24 +17,9 @@
 //
 // Note! Replace only things you wish to change in default configuration.
 //==========================================
-/*
-	Some examples
+// PhoneGap widget config file path (relative to $strBaseScriptDir)
+$widgetConfigFilePath = 'PhoneGap-config.xml';
 
-// append extra source css (`colors.css`) to common css package
-$buildPackages['css']['packages']['common']['src'][] = 'colors';
-
-// replace source files configuration for `index` package
-$buildPackages['app']['packages']['index']['src'] = array(
-	// classes and helpers
-	'external-libraries/*',
-	// session management
-	'session/libraries/*',
-	'session/controllers/*',
-	// other
-	'controllers/*',
-	'proxies/*',
-);
-/**/
 // append data to common JS package
 $buildPackages['app']['packages']['common']['src'][] = 'data/*';
 
