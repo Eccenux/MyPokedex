@@ -7,7 +7,7 @@
 		'png-black' => '.ui-nosvg .ui-alt-icon.ui-icon-$1:after,.ui-nosvg .ui-alt-icon .ui-icon-$1:after {background-image: url("images/extra/png/$1-black.png")}',
 	);
 
-	$pv_icons = array('book','scanner','stack','facebook','google-plus','twitter');
+	$pv_icons = array('fast','scanner','facebook','google-plus','twitter');
 
 	foreach($pv_tpls as $k => $t)
 	{
