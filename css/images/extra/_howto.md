@@ -4,7 +4,7 @@ Prepare single path SVG:
 2. Convert objects to path.
 3. Join all paths into one.
 
-Prepare view box: 
+Prepare view box (not needed if already drawn in x-black.svg): 
 
 1. Name path in properties (to find it quicker).
 5. Copy path to x-black.svg.
