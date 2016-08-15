@@ -183,7 +183,7 @@
 			# Click on another list item.
 			# URL is the same as in step 2.
 		*/
-		$('a', $listContainer)
+		$('li a', $listContainer)
 			.unbind()
 			.click(function(event)
 			{

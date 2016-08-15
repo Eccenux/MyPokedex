@@ -135,7 +135,7 @@ window.$mJ = window.mJappisApplication =
 			document.title += ' [list error!]';
 		}
 // EOC
-		$('a', $listContainer)
+		$('li a', $listContainer)
 			.unbind()
 			.click(function(event)
 			{
