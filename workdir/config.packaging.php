@@ -12,14 +12,17 @@
 // Android test build (optional)
 //$strTestBuildRoot = '_builds/phonegap-android-project/assets/www/';
 
+// Output path (relative to $strBaseScriptDir)
+$strBundleRoot = '../_builds/phonegap-build-bundel/';
+
+// PhoneGap widget config file path (relative to $strBaseScriptDir)
+$widgetConfigFilePath = 'config-PhoneGap.xml';
+
 //==========================================
 // Your packages definitions
 //
 // Note! Replace only things you wish to change in default configuration.
 //==========================================
-// PhoneGap widget config file path (relative to $strBaseScriptDir)
-$widgetConfigFilePath = 'config-PhoneGap.xml';
-
 // append data to common JS package
 $buildPackages['app']['packages']['common']['src'][] = 'data/*';
 
