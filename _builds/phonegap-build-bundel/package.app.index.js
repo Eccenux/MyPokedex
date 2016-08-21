@@ -72,17 +72,17 @@
 			var pokemon = pgoData.pokedex[item.number-1];
 			item.previousPokemonName = pokemon.name;
 			item.previousPokemonUrl = '#page-pokemonCard?id='+pokemon.number;
-		} else {
-			item.previousPokemonName = '\13';
 		}
 		if (item.number+1 < pgoData.pokedex.length) {
 			var pokemon = pgoData.pokedex[item.number+1];
 			item.nextPokemonName = pokemon.name;
 			item.nextPokemonUrl = '#page-pokemonCard?id='+pokemon.number;
-		} else {
-			item.nextPokemonName = ' ';
 		}
-// EOC
+		if (('obsoleteAttacks' in item) || ('introducedAttacks' in item)) {
+			item.attackChanges = true;
+		}
+
+
 		var dataBinding = new DataBindings(page);
 		dataBinding.bind(item);
 

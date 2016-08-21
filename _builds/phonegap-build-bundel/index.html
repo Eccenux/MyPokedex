@@ -114,7 +114,7 @@
 						Opr&oacute;cz samej listy pokemn&oacute;w dost&#281;pne s&#261; te&#380; listy atak&oacute;w danego pokemona
 						wraz DPS (damage per second, czyli obra&#380;enia na sekund&#281;).
 					</p>
-					<p>Wersja aplikacji 0.3.2.</p>
+					<p>Wersja aplikacji 0.3.4.</p>
 				</div>
 				<div data-lang="en">
 					<p>
@@ -122,7 +122,7 @@
 						It includes available attacks 
 						and DPS (damage per second) calculation for each pokemon.
 					</p>
-					<p>App version 0.3.2.</p>
+					<p>App version 0.3.4.</p>
 				</div>
 			</div>
 			<div data-role="collapsible" data-collapsed="true">
@@ -277,12 +277,11 @@
 					&mdash; w tej kolumnie uwzgl&#281;dniony zosta&#322; bonus dla atak&oacute;w tego samego typu co pokemon,
 					czyli tzw. STAB (<em>same type attack bonus</em>).
 				</p>
-				<p>
+				<div data-binding-hide-on-empty="attackChanges">
 					<strong>Oznaczenia przed nazw&#261; ataku</strong>
-					<br>&#9746; atak nie wyst&#281;puje ju&#380; w przyrodzie,
-					<br>&#9745; atak mo&#380;e si&#281; pojawi&#263; u z&#322;apanego pokemona
-					<br>(<a target="_blank" href="https://fevgames.net/pokemon-go-balance-update-august-20-2016/">wi&#281;cej na fevgames</a>).
-				</p>
+					<div class="attack obsolete"><span class="just-icon"></span> atak nie wyst&#281;puje ju&#380; w przyrodzie,</div>
+					<div class="attack introduced"><span class="just-icon"></span> atak mo&#380;e si&#281; pojawi&#263; u z&#322;apanego pokemona.</div>
+				</div>
 			</div>
 			<div data-lang="en">
 				<p>
@@ -290,12 +289,11 @@
 					&mdash; note that the column inclundes bonus for attacks of the same type as the pokemon,
 					so called STAB (<em>same type attack bonus</em>)
 				</p>
-				<p>
+				<div data-binding-hide-on-empty="attackChanges">
 					<strong>Markings before attack name</strong>
-					<br>&#9746; attack is no longer availble in the wild,
-					<br>&#9745; attack can appear in newly acquired pokemon.
-					<br>(<a target="_blank" href="https://fevgames.net/pokemon-go-balance-update-august-20-2016/">more on fevgames</a>).
-				</p>
+					<div class="attack obsolete"><span class="just-icon"></span> attack is no longer availble in the wild,</div>
+					<div class="attack introduced"><span class="just-icon"></span> attack can appear in newly acquired pokemon.</div>
+				</div>
 			</div>
 			<!--
 			<div data-binding-hide-on-empty="previousPokemonName" data-role="navbar">
