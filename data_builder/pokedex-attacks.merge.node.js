@@ -39,7 +39,7 @@ var pokedexWithAttacks = [null];
 for (var i = 1; i < pokedex.length; i++) {	// @note skipping 0 - its null
 	pokedex[i].fast = pokemonAttacks[i].fast;
 	pokedex[i].charge = pokemonAttacks[i].charge;
-	pokedex[i].obsolete = pokemonAttacks[i].obsolete;
+	pokedex[i].obsoleteAttacks = pokemonAttacks[i].obsolete;
 }
 // save merged data
 tools.saveJson(pokedex, 'data/pokedex-with-attacks.json');
