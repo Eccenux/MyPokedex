@@ -1,0 +1,151 @@
+[null,{"pokedex":1,"fast":["Vine Whip","Tackle"],"charge":["Sludge Bomb","Seed Bomb","Power Whip"]}
+,{"pokedex":2,"fast":["Razor Leaf","Vine Whip"],"charge":["Sludge Bomb","Solar Beam","Power Whip"]}
+,{"pokedex":3,"fast":["Razor Leaf","Vine Whip"],"charge":["Sludge Bomb","Petal Blizzard","Solar Beam"]}
+,{"pokedex":4,"fast":["Ember","Scratch"],"charge":["Flame Charge","Flame Burst","Flamethrower"]}
+,{"pokedex":5,"fast":["Ember","Scratch"],"charge":["Fire Punch","Flame Burst","Flamethrower"]}
+,{"pokedex":6,"fast":["Ember","Wing Attack"],"charge":["Fire Blast","Dragon Claw","Flamethrower"]}
+,{"pokedex":7,"fast":["Bubble","Tackle"],"charge":["Aqua Jet","Aqua Tail","Water Pulse"]}
+,{"pokedex":8,"fast":["Water Gun","Bite"],"charge":["Aqua Jet","Ice Beam","Hydro Pump"]}
+,{"pokedex":9,"fast":["Water Gun","Bite"],"charge":["Flash Cannon","Ice Beam","Hydro Pump"]}
+,{"pokedex":10,"fast":["Bug Bite","Tackle"],"charge":["Struggle"]}
+,{"pokedex":11,"fast":["Bug Bite","Tackle"],"charge":["Struggle"]}
+,{"pokedex":12,"fast":["Bug Bite","Confusion"],"charge":["Bug Buzz","Psychic","Signal Beam"]}
+,{"pokedex":13,"fast":["Bug Bite","Poison Sting"],"charge":["Struggle"]}
+,{"pokedex":14,"fast":["Bug Bite","Poison Sting"],"charge":["Struggle"]}
+,{"pokedex":15,"fast":["Bug Bite","Poison Jab"],"charge":["Sludge Bomb","Aerial Ace","X-Scissor"]}
+,{"pokedex":16,"fast":["Quick Attack","Tackle"],"charge":["Twister","Aerial Ace","Air Cutter"]}
+,{"pokedex":17,"fast":["Wing Attack","Steel Wing"],"charge":["Twister","Aerial Ace","Air Cutter"]}
+,{"pokedex":18,"fast":["Wing Attack","Steel Wing"],"charge":["Hurricane","Aerial Ace","Air Cutter"]}
+,{"pokedex":19,"fast":["Tackle","Quick Attack"],"charge":["Dig","Hyper Fang","Body Slam"]}
+,{"pokedex":20,"fast":["Bite","Quick Attack"],"charge":["Dig","Hyper Fang","Hyper Beam"]}
+,{"pokedex":21,"fast":["Peck","Quick Attack"],"charge":["Aerial Ace","Drill Peck","Twister"]}
+,{"pokedex":22,"fast":["Peck","Steel Wing"],"charge":["Aerial Ace","Drill Run","Twister"]}
+,{"pokedex":23,"fast":["Poison Sting","Acid"],"charge":["Wrap","Sludge Bomb","Gunk Shot"]}
+,{"pokedex":24,"fast":["Bite","Acid"],"charge":["Dark Pulse","Sludge Wave","Gunk Shot"]}
+,{"pokedex":25,"fast":["Thunder Shock","Quick Attack"],"charge":["Discharge","Thunderbolt","Thunder"]}
+,{"pokedex":26,"fast":["Thunder Shock","Spark"],"charge":["Brick Break","Thunder Punch","Thunder"]}
+,{"pokedex":27,"fast":["Scratch","Mud Shot"],"charge":["Dig","Rock Slide","Rock Tomb"]}
+,{"pokedex":28,"fast":["Metal Claw","Mud Shot"],"charge":["Earthquake","Rock Tomb","Bulldoze"]}
+,{"pokedex":29,"fast":["Bite","Poison Sting"],"charge":["Poison Fang","Body Slam","Sludge Bomb"]}
+,{"pokedex":30,"fast":["Bite","Poison Sting"],"charge":["Poison Fang","Dig","Sludge Bomb"]}
+,{"pokedex":31,"fast":["Poison Jab","Bite"],"charge":["Earthquake","Sludge Wave","Stone Edge"]}
+,{"pokedex":32,"fast":["Peck","Poison Sting"],"charge":["Horn Attack","Body Slam","Sludge Bomb"]}
+,{"pokedex":33,"fast":["Poison Jab","Poison Sting"],"charge":["Horn Attack","Dig","Sludge Bomb"]}
+,{"pokedex":34,"fast":["Poison Jab","Fury Cutter"],"charge":["Earthquake","Sludge Wave","Megahorn"]}
+,{"pokedex":35,"fast":["Pound","Zen Headbutt"],"charge":["Disarming Voice","Body Slam","Moonblast"]}
+,{"pokedex":36,"fast":["Pound","Zen Headbutt"],"charge":["Dazzling Gleam","Psychic","Moonblast"]}
+,{"pokedex":37,"fast":["Quick Attack","Ember"],"charge":["Body Slam","Flamethrower","Flame Charge"]}
+,{"pokedex":38,"fast":["Feint Attack","Ember"],"charge":["Heat Wave","Flamethrower","Fire Blast"]}
+,{"pokedex":39,"fast":["Pound","Feint Attack"],"charge":["Disarming Voice","Body Slam","Play Rough"]}
+,{"pokedex":40,"fast":["Pound","Feint Attack"],"charge":["Dazzling Gleam","Hyper Beam","Play Rough"]}
+,{"pokedex":41,"fast":["Quick Attack","Bite"],"charge":["Poison Fang","Air Cutter","Sludge Bomb"]}
+,{"pokedex":42,"fast":["Wing Attack","Bite"],"charge":["Poison Fang","Air Cutter","Ominous Wind"]}
+,{"pokedex":43,"fast":["Razor Leaf","Acid"],"charge":["Seed Bomb","Sludge Bomb","Moonblast"]}
+,{"pokedex":44,"fast":["Razor Leaf","Acid"],"charge":["Petal Blizzard","Sludge Bomb","Moonblast"]}
+,{"pokedex":45,"fast":["Razor Leaf","Acid"],"charge":["Petal Blizzard","Solar Beam","Moonblast"]}
+,{"pokedex":46,"fast":["Scratch","Bug Bite"],"charge":["Cross Poison","X-Scissor","Seed Bomb"]}
+,{"pokedex":47,"fast":["Bug Bite","Fury Cutter"],"charge":["Cross Poison","X-Scissor","Solar Beam"]}
+,{"pokedex":48,"fast":["Bug Bite","Confusion"],"charge":["Poison Fang","Psybeam","Signal Beam"]}
+,{"pokedex":49,"fast":["Bug Bite","Confusion"],"charge":["Poison Fang","Psychic","Bug Buzz"]}
+,{"pokedex":50,"fast":["Mud Shot","Scratch"],"charge":["Dig","Mud Bomb","Rock Tomb"]}
+,{"pokedex":51,"fast":["Sucker Punch","Mud Shot","Mud Slap"],"charge":["Earthquake","Mud Bomb","Stone Edge"]}
+,{"pokedex":52,"fast":["Scratch","Bite"],"charge":["Night Slash","Dark Pulse","Body Slam"]}
+,{"pokedex":53,"fast":["Scratch","Feint Attack"],"charge":["Night Slash","Power Gem","Play Rough"]}
+,{"pokedex":54,"fast":["Water Gun","Zen Headbutt"],"charge":["Psybeam","Aqua Tail","Cross Chop"]}
+,{"pokedex":55,"fast":["Water Gun","Confusion"],"charge":["Psychic","Hydro Pump","Ice Beam"]}
+,{"pokedex":56,"fast":["Karate Chop","Scratch"],"charge":["Cross Chop","Low Sweep","Brick Break"]}
+,{"pokedex":57,"fast":["Low Kick","Karate Chop"],"charge":["Cross Chop","Low Sweep","Night Slash"]}
+,{"pokedex":58,"fast":["Ember","Bite"],"charge":["Flame Wheel","Body Slam","Flamethrower"]}
+,{"pokedex":59,"fast":["Fire Fang","Bite"],"charge":["Fire Blast","Flamethrower","Bulldoze"]}
+,{"pokedex":60,"fast":["Bubble","Mud Shot"],"charge":["Bubble Beam","Mud Bomb","Body Slam"]}
+,{"pokedex":61,"fast":["Bubble","Mud Shot"],"charge":["Scald","Mud Bomb","Bubble Beam"]}
+,{"pokedex":62,"fast":["Bubble","Mud Shot"],"charge":["Hydro Pump","Submission","Ice Punch"]}
+,{"pokedex":63,"fast":["Zen Headbutt"],"charge":["Psyshock","Signal Beam","Shadow Ball"]}
+,{"pokedex":64,"fast":["Psycho Cut","Confusion"],"charge":["Psybeam","Dazzling Gleam","Shadow Ball"]}
+,{"pokedex":65,"fast":["Psycho Cut","Confusion"],"charge":["Psychic","Dazzling Gleam","Shadow Ball"]}
+,{"pokedex":66,"fast":["Low Kick","Karate Chop"],"charge":["Low Sweep","Brick Break","Cross Chop"]}
+,{"pokedex":67,"fast":["Low Kick","Karate Chop"],"charge":["Submission","Brick Break","Cross Chop"]}
+,{"pokedex":68,"fast":["Bullet Punch","Karate Chop"],"charge":["Stone Edge","Submission","Cross Chop"]}
+,{"pokedex":69,"fast":["Vine Whip","Acid"],"charge":["Power Whip","Sludge Bomb","Wrap"]}
+,{"pokedex":70,"fast":["Razor Leaf","Acid"],"charge":["Power Whip","Sludge Bomb","Seed Bomb"]}
+,{"pokedex":71,"fast":["Razor Leaf","Acid"],"charge":["Leaf Blade","Sludge Bomb","Solar Beam"]}
+,{"pokedex":72,"fast":["Bubble","Poison Sting"],"charge":["Bubble Beam","Water Pulse","Wrap"]}
+,{"pokedex":73,"fast":["Acid","Poison Jab"],"charge":["Hydro Pump","Sludge Wave","Blizzard"]}
+,{"pokedex":74,"fast":["Rock Throw","Tackle"],"charge":["Rock Slide","Rock Tomb","Dig"]}
+,{"pokedex":75,"fast":["Rock Throw","Mud Shot","Mud Slap"],"charge":["Dig","Stone Edge","Rock Slide"]}
+,{"pokedex":76,"fast":["Rock Throw","Mud Shot","Mud Slap"],"charge":["Stone Edge","Ancient Power","Earthquake"]}
+,{"pokedex":77,"fast":["Tackle","Ember"],"charge":["Flame Charge","Flame Wheel","Fire Blast"]}
+,{"pokedex":78,"fast":["Low Kick","Ember"],"charge":["Fire Blast","Drill Run","Heat Wave"]}
+,{"pokedex":79,"fast":["Water Gun","Confusion"],"charge":["Water Pulse","Psyshock","Psychic"]}
+,{"pokedex":80,"fast":["Water Gun","Confusion"],"charge":["Water Pulse","Psychic","Ice Beam"]}
+,{"pokedex":81,"fast":["Spark","Thunder Shock"],"charge":["Discharge","Magnet Bomb","Thunderbolt"]}
+,{"pokedex":82,"fast":["Spark","Thunder Shock"],"charge":["Discharge","Magnet Bomb","Flash Cannon"]}
+,{"pokedex":83,"fast":["Cut","Fury Cutter"],"charge":["Aerial Ace","Air Cutter","Leaf Blade"]}
+,{"pokedex":84,"fast":["Peck","Quick Attack"],"charge":["Drill Peck","Aerial Ace","Swift"]}
+,{"pokedex":85,"fast":["Feint Attack","Steel Wing"],"charge":["Drill Peck","Aerial Ace","Air Cutter"]}
+,{"pokedex":86,"fast":["Ice Shard","Water Gun","Lick"],"charge":["Aqua Jet","Icy Wind","Aqua Tail"]}
+,{"pokedex":87,"fast":["Frost Breath","Ice Shard"],"charge":["Icy Wind","Aqua Jet","Blizzard"]}
+,{"pokedex":88,"fast":["Acid","Mud Slap","Poison Jab"],"charge":["Sludge","Mud Bomb","Sludge Bomb"]}
+,{"pokedex":89,"fast":["Acid","Poison Jab","Lick"],"charge":["Dark Pulse","Gunk Shot","Sludge Wave"]}
+,{"pokedex":90,"fast":["Ice Shard","Tackle"],"charge":["Bubble Beam","Water Pulse","Icy Wind"]}
+,{"pokedex":91,"fast":["Frost Breath","Ice Shard"],"charge":["Icy Wind","Hydro Pump","Blizzard"]}
+,{"pokedex":92,"fast":["Lick","Sucker Punch"],"charge":["Ominous Wind","Dark Pulse","Sludge Bomb"]}
+,{"pokedex":93,"fast":["Shadow Claw","Lick"],"charge":["Shadow Ball","Dark Pulse","Sludge Bomb"]}
+,{"pokedex":94,"fast":["Sucker Punch","Shadow Claw"],"charge":["Shadow Ball","Dark Pulse","Sludge Wave","Sludge Bomb"]}
+,{"pokedex":95,"fast":["Rock Throw","Tackle"],"charge":["Rock Slide","Stone Edge","Iron Head"]}
+,{"pokedex":96,"fast":["Pound","Confusion"],"charge":["Psybeam","Psyshock","Psychic"]}
+,{"pokedex":97,"fast":["Zen Headbutt","Confusion"],"charge":["Psyshock","Psychic","Shadow Ball"]}
+,{"pokedex":98,"fast":["Bubble","Mud Shot"],"charge":["Vice Grip","Bubble Beam","Water Pulse"]}
+,{"pokedex":99,"fast":["Metal Claw","Mud Shot"],"charge":["Vice Grip","X-Scissor","Water Pulse"]}
+,{"pokedex":100,"fast":["Spark","Tackle"],"charge":["Discharge","Thunderbolt","Signal Beam"]}
+,{"pokedex":101,"fast":["Spark","Tackle"],"charge":["Discharge","Thunderbolt","Hyper Beam"]}
+,{"pokedex":102,"fast":["Confusion"],"charge":["Seed Bomb","Psychic","Ancient Power"]}
+,{"pokedex":103,"fast":["Confusion","Zen Headbutt"],"charge":["Seed Bomb","Psychic","Solar Beam"]}
+,{"pokedex":104,"fast":["Mud Slap","Rock Smash"],"charge":["Bone Club","Dig","Bulldoze"]}
+,{"pokedex":105,"fast":["Mud Slap","Rock Smash"],"charge":["Bone Club","Dig","Earthquake"]}
+,{"pokedex":106,"fast":["Low Kick","Rock Smash"],"charge":["Stomp","Low Sweep","Stone Edge","Brick Break"]}
+,{"pokedex":107,"fast":["Bullet Punch","Rock Smash"],"charge":["Fire Punch","Ice Punch","Thunder Punch","Brick Break"]}
+,{"pokedex":108,"fast":["Lick","Zen Headbutt"],"charge":["Hyper Beam","Stomp","Power Whip"]}
+,{"pokedex":109,"fast":["Acid","Tackle"],"charge":["Sludge","Sludge Bomb","Dark Pulse"]}
+,{"pokedex":110,"fast":["Acid","Tackle"],"charge":["Sludge Bomb","Shadow Ball","Dark Pulse"]}
+,{"pokedex":111,"fast":["Mud Slap","Rock Smash"],"charge":["Bulldoze","Horn Attack","Stomp"]}
+,{"pokedex":112,"fast":["Mud Slap","Rock Smash"],"charge":["Megahorn","Earthquake","Stone Edge"]}
+,{"pokedex":113,"fast":["Pound","Zen Headbutt"],"charge":["Psychic","Psybeam","Dazzling Gleam","Hyper Beam"]}
+,{"pokedex":114,"fast":["Vine Whip"],"charge":["Power Whip","Sludge Bomb","Solar Beam"]}
+,{"pokedex":115,"fast":["Mud Slap","Low Kick"],"charge":["Brick Break","Earthquake","Stomp"]}
+,{"pokedex":116,"fast":["Water Gun","Bubble"],"charge":["Bubble Beam","Dragon Pulse","Flash Cannon"]}
+,{"pokedex":117,"fast":["Water Gun","Dragon Breath"],"charge":["Blizzard","Dragon Pulse","Hydro Pump"]}
+,{"pokedex":118,"fast":["Peck","Mud Shot"],"charge":["Water Pulse","Horn Attack","Aqua Tail"]}
+,{"pokedex":119,"fast":["Peck","Poison Jab"],"charge":["Icy Wind","Drill Run","Megahorn"]}
+,{"pokedex":120,"fast":["Quick Attack","Water Gun","Tackle"],"charge":["Swift","Bubble Beam","Power Gem"]}
+,{"pokedex":121,"fast":["Quick Attack","Water Gun","Tackle"],"charge":["Hydro Pump","Power Gem","Psybeam","Psychic"]}
+,{"pokedex":122,"fast":["Confusion","Zen Headbutt"],"charge":["Psybeam","Psychic","Shadow Ball"]}
+,{"pokedex":123,"fast":["Fury Cutter","Steel Wing"],"charge":["Night Slash","X-Scissor","Bug Buzz"]}
+,{"pokedex":124,"fast":["Frost Breath","Pound"],"charge":["Draining Kiss","Ice Punch","Psyshock"]}
+,{"pokedex":125,"fast":["Thunder Shock","Low Kick"],"charge":["Thunder Punch","Thunderbolt","Thunder"]}
+,{"pokedex":126,"fast":["Ember","Karate Chop"],"charge":["Fire Blast","Fire Punch","Flamethrower"]}
+,{"pokedex":127,"fast":["Rock Smash","Fury Cutter"],"charge":["Vice Grip","X-Scissor","Submission"]}
+,{"pokedex":128,"fast":["Tackle","Zen Headbutt"],"charge":["Horn Attack","Iron Head","Earthquake"]}
+,{"pokedex":129,"fast":["Splash"],"charge":["Struggle"]}
+,{"pokedex":130,"fast":["Dragon Breath","Bite"],"charge":["Hydro Pump","Twister","Dragon Pulse"]}
+,{"pokedex":131,"fast":["Frost Breath","Ice Shard"],"charge":["Dragon Pulse","Ice Beam","Blizzard"]}
+,{"pokedex":132,"fast":["Pound"],"charge":["Struggle"]}
+,{"pokedex":133,"fast":["Quick Attack","Tackle"],"charge":["Dig","Swift","Body Slam"]}
+,{"pokedex":134,"fast":["Water Gun"],"charge":["Water Pulse","Hydro Pump","Aqua Tail"]}
+,{"pokedex":135,"fast":["Thunder Shock"],"charge":["Discharge","Thunderbolt","Thunder"]}
+,{"pokedex":136,"fast":["Ember"],"charge":["Fire Blast","Flamethrower","Heat Wave"]}
+,{"pokedex":137,"fast":["Quick Attack","Tackle","Zen Headbutt"],"charge":["Psybeam","Signal Beam","Discharge"]}
+,{"pokedex":138,"fast":["Water Gun","Mud Shot"],"charge":["Ancient Power","Brine","Rock Tomb"]}
+,{"pokedex":139,"fast":["Rock Throw","Water Gun","Mud Shot"],"charge":["Ancient Power","Hydro Pump","Rock Slide"]}
+,{"pokedex":140,"fast":["Scratch","Mud Shot"],"charge":["Ancient Power","Aqua Jet","Rock Tomb"]}
+,{"pokedex":141,"fast":["Mud Shot","Fury Cutter"],"charge":["Ancient Power","Water Pulse","Stone Edge"]}
+,{"pokedex":142,"fast":["Steel Wing","Bite"],"charge":["Ancient Power","Iron Head","Hyper Beam"]}
+,{"pokedex":143,"fast":["Zen Headbutt","Lick"],"charge":["Body Slam","Hyper Beam","Earthquake"]}
+,{"pokedex":144,"fast":["Frost Breath"],"charge":["Ice Beam","Icy Wind","Blizzard"]}
+,{"pokedex":145,"fast":["Thunder Shock"],"charge":["Discharge","Thunderbolt","Thunder"]}
+,{"pokedex":146,"fast":["Ember"],"charge":["Fire Blast","Heat Wave","Flamethrower"]}
+,{"pokedex":147,"fast":["Dragon Breath"],"charge":["Wrap","Twister","Aqua Tail"]}
+,{"pokedex":148,"fast":["Dragon Breath"],"charge":["Wrap","Aqua Tail","Dragon Pulse"]}
+,{"pokedex":149,"fast":["Dragon Breath","Steel Wing"],"charge":["Dragon Pulse","Hyper Beam","Dragon Claw"]}
+,{"pokedex":150,"fast":["Psycho Cut","Confusion"],"charge":["Psychic","Shadow Ball","Hyper Beam"]}
+,{"pokedex":151,"fast":["Pound"],"charge":["Hurricane","Earthquake","Psychic","Dragon Pulse","Thunder","Moonblast","Fire Blast","Solar Beam","Hyper Beam","Blizzard"]}]
