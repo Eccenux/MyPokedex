@@ -73,6 +73,12 @@ function applyChanges(changes, category, pokemonAttacks) {
 			}
 			pokemon.obsolete[row.obsolete] = true;
 		}
+		if (row.introduced.length) {
+			if (!('introduced' in pokemon)) {
+				pokemon.introduced = {};
+			}
+			pokemon.introduced[row.introduced] = true;
+		}
 	}
 }
 
