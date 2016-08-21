@@ -82,8 +82,10 @@ class FileHelper
 			}
 		}
 		if ($removeContainerFolder && is_dir($dir)) {
-			if (!rmdir($dir)) {
-				die("Error removing $dir");
+			if (!@rmdir($dir)) {
+				// probably just has some hidden files, leave it.
+				//die("Error removing $dir");
+				return false;
 			}
 			return false;
 		}
