@@ -12,17 +12,30 @@
   height: 1em;
 }
 .attack.obsolete td {
-  color: #999;
+  opacity: .5;
 }
+.attack.obsolete .just-icon,
+.attack.introduced .just-icon,
 .attack.obsolete td:first-child:before,
 .attack.introduced td:first-child:before {
+  content: "";
   padding-right: .4em;
   display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: .8em;
+  width: .8em;
+  height: .8em;
+  position: relative;
+  top: 1px;
+  opacity: .7;
 }
+.attack.obsolete .just-icon,
 .attack.obsolete td:first-child:before {
-  content: "☒";
+  background-image: url("images/icons-svg/delete-black.svg");
 }
+.attack.introduced .just-icon,
 .attack.introduced td:first-child:before {
-  content: "☑";
+  background-image: url("images/icons-svg/clock-black.svg");
 }
 /*# sourceMappingURL=attacks.css.map */
