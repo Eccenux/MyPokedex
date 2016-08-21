@@ -36,7 +36,8 @@
 ,{"pokedex":36,"fast":["Pound","Zen Headbutt"],"charge":["Dazzling Gleam","Psychic","Moonblast"]}
 ,{"pokedex":37,"fast":["Quick Attack","Ember"],"charge":["Body Slam","Flamethrower","Flame Charge"]}
 ,{"pokedex":38,"fast":["Feint Attack","Ember"],"charge":["Heat Wave","Flamethrower","Fire Blast"]}
-,{"pokedex":39,"fast":["Pound","Feint Attack"],"charge":["Disarming Voice","Body Slam","Play Rough"]}
+,{"pokedex":39,"fast":["Pound","Feint Attack"],"charge":["Disarming Voice","Body Slam","Play Rough","Dazzling Gleam"],"obsolete":{"Play Rough":true}
+,"introduced":{"Dazzling Gleam":true}}
 ,{"pokedex":40,"fast":["Pound","Feint Attack"],"charge":["Dazzling Gleam","Hyper Beam","Play Rough"]}
 ,{"pokedex":41,"fast":["Quick Attack","Bite"],"charge":["Poison Fang","Air Cutter","Sludge Bomb"]}
 ,{"pokedex":42,"fast":["Wing Attack","Bite"],"charge":["Poison Fang","Air Cutter","Ominous Wind"]}
@@ -47,7 +48,8 @@
 ,{"pokedex":47,"fast":["Bug Bite","Fury Cutter"],"charge":["Cross Poison","X-Scissor","Solar Beam"]}
 ,{"pokedex":48,"fast":["Bug Bite","Confusion"],"charge":["Poison Fang","Psybeam","Signal Beam"]}
 ,{"pokedex":49,"fast":["Bug Bite","Confusion"],"charge":["Poison Fang","Psychic","Bug Buzz"]}
-,{"pokedex":50,"fast":["Mud Shot","Scratch"],"charge":["Dig","Mud Bomb","Rock Tomb"]}
+,{"pokedex":50,"fast":["Mud Shot","Scratch","Mud Slap"],"charge":["Dig","Mud Bomb","Rock Tomb"],"obsolete":{"Mud Shot":true}
+,"introduced":{"Mud Slap":true}}
 ,{"pokedex":51,"fast":["Sucker Punch","Mud Shot","Mud Slap"],"charge":["Earthquake","Mud Bomb","Stone Edge"],"obsolete":{"Mud Shot":true}
 ,"introduced":{"Mud Slap":true}}
 ,{"pokedex":52,"fast":["Scratch","Bite"],"charge":["Night Slash","Dark Pulse","Body Slam"]}

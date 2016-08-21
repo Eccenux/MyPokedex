@@ -37,7 +37,8 @@ pgoData.pokedex =
 ,{"number":36,"name":"Clefable","type1":"fairy","type2":"","fast":["Pound","Zen Headbutt"],"charge":["Dazzling Gleam","Psychic","Moonblast"]}
 ,{"number":37,"name":"Vulpix","type1":"fire","type2":"","fast":["Quick Attack","Ember"],"charge":["Body Slam","Flamethrower","Flame Charge"]}
 ,{"number":38,"name":"Ninetales","type1":"fire","type2":"","fast":["Feint Attack","Ember"],"charge":["Heat Wave","Flamethrower","Fire Blast"]}
-,{"number":39,"name":"Jigglypuff","type1":"normal","type2":"fairy","fast":["Pound","Feint Attack"],"charge":["Disarming Voice","Body Slam","Play Rough"]}
+,{"number":39,"name":"Jigglypuff","type1":"normal","type2":"fairy","fast":["Pound","Feint Attack"],"charge":["Disarming Voice","Body Slam","Play Rough","Dazzling Gleam"],"obsoleteAttacks":{"Play Rough":true}
+,"introducedAttacks":{"Dazzling Gleam":true}}
 ,{"number":40,"name":"Wigglytuff","type1":"normal","type2":"fairy","fast":["Pound","Feint Attack"],"charge":["Dazzling Gleam","Hyper Beam","Play Rough"]}
 ,{"number":41,"name":"Zubat","type1":"poison","type2":"flying","fast":["Quick Attack","Bite"],"charge":["Poison Fang","Air Cutter","Sludge Bomb"]}
 ,{"number":42,"name":"Golbat","type1":"poison","type2":"flying","fast":["Wing Attack","Bite"],"charge":["Poison Fang","Air Cutter","Ominous Wind"]}
@@ -48,7 +49,8 @@ pgoData.pokedex =
 ,{"number":47,"name":"Parasect","type1":"bug","type2":"grass","fast":["Bug Bite","Fury Cutter"],"charge":["Cross Poison","X-Scissor","Solar Beam"]}
 ,{"number":48,"name":"Venonat","type1":"bug","type2":"poison","fast":["Bug Bite","Confusion"],"charge":["Poison Fang","Psybeam","Signal Beam"]}
 ,{"number":49,"name":"Venomoth","type1":"bug","type2":"poison","fast":["Bug Bite","Confusion"],"charge":["Poison Fang","Psychic","Bug Buzz"]}
-,{"number":50,"name":"Diglett","type1":"ground","type2":"","fast":["Mud Shot","Scratch"],"charge":["Dig","Mud Bomb","Rock Tomb"]}
+,{"number":50,"name":"Diglett","type1":"ground","type2":"","fast":["Mud Shot","Scratch","Mud Slap"],"charge":["Dig","Mud Bomb","Rock Tomb"],"obsoleteAttacks":{"Mud Shot":true}
+,"introducedAttacks":{"Mud Slap":true}}
 ,{"number":51,"name":"Dugtrio","type1":"ground","type2":"","fast":["Sucker Punch","Mud Shot","Mud Slap"],"charge":["Earthquake","Mud Bomb","Stone Edge"],"obsoleteAttacks":{"Mud Shot":true}
 ,"introducedAttacks":{"Mud Slap":true}}
 ,{"number":52,"name":"Meowth","type1":"normal","type2":"","fast":["Scratch","Bite"],"charge":["Night Slash","Dark Pulse","Body Slam"]}

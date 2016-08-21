@@ -59,7 +59,7 @@ function gatherChanges(table, pokemonMapping) {
 	Apply changes of given category.
 */
 function applyChanges(changes, category, pokemonAttacks) {
-	for (var i = 1; i < changes.length; i++) {
+	for (var i = 0; i < changes.length; i++) {
 		var row = changes[i];
 		var pokemon = pokemonAttacks[row.pokedex];
 		if (row.introduced.length) {
