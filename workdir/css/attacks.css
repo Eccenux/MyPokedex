@@ -11,4 +11,18 @@
   width: 1em;
   height: 1em;
 }
+.attack.obsolete td {
+  color: #999;
+}
+.attack.obsolete td:first-child:before,
+.attack.introduced td:first-child:before {
+  padding-right: .4em;
+  display: inline-block;
+}
+.attack.obsolete td:first-child:before {
+  content: "☒";
+}
+.attack.introduced td:first-child:before {
+  content: "☑";
+}
 /*# sourceMappingURL=attacks.css.map */

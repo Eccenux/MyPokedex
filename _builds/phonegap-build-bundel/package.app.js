@@ -387,7 +387,8 @@ pgoData.pokedex =
 ,{"number":48,"name":"Venonat","type1":"bug","type2":"poison","fast":["Bug Bite","Confusion"],"charge":["Poison Fang","Psybeam","Signal Beam"]}
 ,{"number":49,"name":"Venomoth","type1":"bug","type2":"poison","fast":["Bug Bite","Confusion"],"charge":["Poison Fang","Psychic","Bug Buzz"]}
 ,{"number":50,"name":"Diglett","type1":"ground","type2":"","fast":["Mud Shot","Scratch"],"charge":["Dig","Mud Bomb","Rock Tomb"]}
-,{"number":51,"name":"Dugtrio","type1":"ground","type2":"","fast":["Sucker Punch","Mud Shot"],"charge":["Earthquake","Mud Bomb","Stone Edge"]}
+,{"number":51,"name":"Dugtrio","type1":"ground","type2":"","fast":["Sucker Punch","Mud Shot","Mud Slap"],"charge":["Earthquake","Mud Bomb","Stone Edge"],"obsoleteAttacks":{"Mud Shot":true}
+,"introducedAttacks":{"Mud Slap":true}}
 ,{"number":52,"name":"Meowth","type1":"normal","type2":"","fast":["Scratch","Bite"],"charge":["Night Slash","Dark Pulse","Body Slam"]}
 ,{"number":53,"name":"Persian","type1":"normal","type2":"","fast":["Scratch","Feint Attack"],"charge":["Night Slash","Power Gem","Play Rough"]}
 ,{"number":54,"name":"Psyduck","type1":"water","type2":"","fast":["Water Gun","Zen Headbutt"],"charge":["Psybeam","Aqua Tail","Cross Chop"]}
@@ -411,8 +412,10 @@ pgoData.pokedex =
 ,{"number":72,"name":"Tentacool","type1":"water","type2":"poison","fast":["Bubble","Poison Sting"],"charge":["Bubble Beam","Water Pulse","Wrap"]}
 ,{"number":73,"name":"Tentacruel","type1":"water","type2":"poison","fast":["Acid","Poison Jab"],"charge":["Hydro Pump","Sludge Wave","Blizzard"]}
 ,{"number":74,"name":"Geodude","type1":"rock","type2":"ground","fast":["Rock Throw","Tackle"],"charge":["Rock Slide","Rock Tomb","Dig"]}
-,{"number":75,"name":"Graveler","type1":"rock","type2":"ground","fast":["Rock Throw","Mud Shot"],"charge":["Dig","Stone Edge","Rock Slide"]}
-,{"number":76,"name":"Golem","type1":"rock","type2":"ground","fast":["Rock Throw","Mud Shot"],"charge":["Stone Edge","Ancient Power","Earthquake"]}
+,{"number":75,"name":"Graveler","type1":"rock","type2":"ground","fast":["Rock Throw","Mud Shot","Mud Slap"],"charge":["Dig","Stone Edge","Rock Slide"],"obsoleteAttacks":{"Mud Shot":true}
+,"introducedAttacks":{"Mud Slap":true}}
+,{"number":76,"name":"Golem","type1":"rock","type2":"ground","fast":["Rock Throw","Mud Shot","Mud Slap"],"charge":["Stone Edge","Ancient Power","Earthquake"],"obsoleteAttacks":{"Mud Shot":true}
+,"introducedAttacks":{"Mud Slap":true}}
 ,{"number":77,"name":"Ponyta","type1":"fire","type2":"","fast":["Tackle","Ember"],"charge":["Flame Charge","Flame Wheel","Fire Blast"]}
 ,{"number":78,"name":"Rapidash","type1":"fire","type2":"","fast":["Low Kick","Ember"],"charge":["Fire Blast","Drill Run","Heat Wave"]}
 ,{"number":79,"name":"Slowpoke","type1":"water","type2":"psychic","fast":["Water Gun","Confusion"],"charge":["Water Pulse","Psyshock","Psychic"]}
@@ -422,15 +425,19 @@ pgoData.pokedex =
 ,{"number":83,"name":"Farfetch'd","type1":"normal","type2":"flying","fast":["Cut","Fury Cutter"],"charge":["Aerial Ace","Air Cutter","Leaf Blade"]}
 ,{"number":84,"name":"Doduo","type1":"normal","type2":"flying","fast":["Peck","Quick Attack"],"charge":["Drill Peck","Aerial Ace","Swift"]}
 ,{"number":85,"name":"Dodrio","type1":"normal","type2":"flying","fast":["Feint Attack","Steel Wing"],"charge":["Drill Peck","Aerial Ace","Air Cutter"]}
-,{"number":86,"name":"Seel","type1":"water","type2":"","fast":["Ice Shard","Water Gun"],"charge":["Aqua Jet","Icy Wind","Aqua Tail"]}
+,{"number":86,"name":"Seel","type1":"water","type2":"","fast":["Ice Shard","Water Gun","Lick"],"charge":["Aqua Jet","Icy Wind","Aqua Tail"],"obsoleteAttacks":{"Water Gun":true}
+,"introducedAttacks":{"Lick":true}}
 ,{"number":87,"name":"Dewgong","type1":"water","type2":"ice","fast":["Frost Breath","Ice Shard"],"charge":["Icy Wind","Aqua Jet","Blizzard"]}
-,{"number":88,"name":"Grimer","type1":"poison","type2":"","fast":["Acid","Mud Slap"],"charge":["Sludge","Mud Bomb","Sludge Bomb"]}
-,{"number":89,"name":"Muk","type1":"poison","type2":"","fast":["Acid","Poison Jab"],"charge":["Dark Pulse","Gunk Shot","Sludge Wave"]}
+,{"number":88,"name":"Grimer","type1":"poison","type2":"","fast":["Acid","Mud Slap","Poison Jab"],"charge":["Sludge","Mud Bomb","Sludge Bomb"],"obsoleteAttacks":{"Acid":true}
+,"introducedAttacks":{"Poison Jab":true}}
+,{"number":89,"name":"Muk","type1":"poison","type2":"","fast":["Acid","Poison Jab","Lick"],"charge":["Dark Pulse","Gunk Shot","Sludge Wave"],"obsoleteAttacks":{"Acid":true}
+,"introducedAttacks":{"Lick":true}}
 ,{"number":90,"name":"Shellder","type1":"water","type2":"","fast":["Ice Shard","Tackle"],"charge":["Bubble Beam","Water Pulse","Icy Wind"]}
 ,{"number":91,"name":"Cloyster","type1":"water","type2":"ice","fast":["Frost Breath","Ice Shard"],"charge":["Icy Wind","Hydro Pump","Blizzard"]}
 ,{"number":92,"name":"Gastly","type1":"ghost","type2":"poison","fast":["Lick","Sucker Punch"],"charge":["Ominous Wind","Dark Pulse","Sludge Bomb"]}
 ,{"number":93,"name":"Haunter","type1":"ghost","type2":"poison","fast":["Shadow Claw","Lick"],"charge":["Shadow Ball","Dark Pulse","Sludge Bomb"]}
-,{"number":94,"name":"Gengar","type1":"ghost","type2":"poison","fast":["Sucker Punch","Shadow Claw"],"charge":["Shadow Ball","Dark Pulse","Sludge Wave"]}
+,{"number":94,"name":"Gengar","type1":"ghost","type2":"poison","fast":["Sucker Punch","Shadow Claw"],"charge":["Shadow Ball","Dark Pulse","Sludge Wave","Sludge Bomb"],"obsoleteAttacks":{"Sludge Wave":true}
+,"introducedAttacks":{"Sludge Bomb":true}}
 ,{"number":95,"name":"Onix","type1":"rock","type2":"ground","fast":["Rock Throw","Tackle"],"charge":["Rock Slide","Stone Edge","Iron Head"]}
 ,{"number":96,"name":"Drowzee","type1":"psychic","type2":"","fast":["Pound","Confusion"],"charge":["Psybeam","Psyshock","Psychic"]}
 ,{"number":97,"name":"Hypno","type1":"psychic","type2":"","fast":["Zen Headbutt","Confusion"],"charge":["Psyshock","Psychic","Shadow Ball"]}
@@ -442,22 +449,26 @@ pgoData.pokedex =
 ,{"number":103,"name":"Exeggutor","type1":"grass","type2":"psychic","fast":["Confusion","Zen Headbutt"],"charge":["Seed Bomb","Psychic","Solar Beam"]}
 ,{"number":104,"name":"Cubone","type1":"ground","type2":"","fast":["Mud Slap","Rock Smash"],"charge":["Bone Club","Dig","Bulldoze"]}
 ,{"number":105,"name":"Marowak","type1":"ground","type2":"","fast":["Mud Slap","Rock Smash"],"charge":["Bone Club","Dig","Earthquake"]}
-,{"number":106,"name":"Hitmonlee","type1":"fighting","type2":"","fast":["Low Kick","Rock Smash"],"charge":["Stomp","Low Sweep","Stone Edge"]}
+,{"number":106,"name":"Hitmonlee","type1":"fighting","type2":"","fast":["Low Kick","Rock Smash"],"charge":["Stomp","Low Sweep","Stone Edge","Brick Break"],"obsoleteAttacks":{"Stomp":true}
+,"introducedAttacks":{"Brick Break":true}}
 ,{"number":107,"name":"Hitmonchan","type1":"fighting","type2":"","fast":["Bullet Punch","Rock Smash"],"charge":["Fire Punch","Ice Punch","Thunder Punch","Brick Break"]}
 ,{"number":108,"name":"Lickitung","type1":"normal","type2":"","fast":["Lick","Zen Headbutt"],"charge":["Hyper Beam","Stomp","Power Whip"]}
-,{"number":109,"name":"Koffing","type1":"poison","type2":"","fast":["Acid","Tackle"],"charge":["Sludge","Sludge Bomb","Dark Pulse"]}
-,{"number":110,"name":"Weezing","type1":"poison","type2":"","fast":["Acid","Tackle"],"charge":["Sludge Bomb","Shadow Ball","Dark Pulse"]}
+,{"number":109,"name":"Koffing","type1":"poison","type2":"","fast":["Acid","Tackle"],"charge":["Sludge","Sludge Bomb","Dark Pulse"],"obsoleteAttacks":{"Acid":true}}
+,{"number":110,"name":"Weezing","type1":"poison","type2":"","fast":["Acid","Tackle"],"charge":["Sludge Bomb","Shadow Ball","Dark Pulse"],"obsoleteAttacks":{"Acid":true}}
 ,{"number":111,"name":"Rhyhorn","type1":"ground","type2":"rock","fast":["Mud Slap","Rock Smash"],"charge":["Bulldoze","Horn Attack","Stomp"]}
 ,{"number":112,"name":"Rhydon","type1":"ground","type2":"rock","fast":["Mud Slap","Rock Smash"],"charge":["Megahorn","Earthquake","Stone Edge"]}
-,{"number":113,"name":"Chansey","type1":"normal","type2":"","fast":["Pound","Zen Headbutt"],"charge":["Psychic","Psybeam","Dazzling Gleam"]}
+,{"number":113,"name":"Chansey","type1":"normal","type2":"","fast":["Pound","Zen Headbutt"],"charge":["Psychic","Psybeam","Dazzling Gleam","Hyper Beam"],"obsoleteAttacks":{"Psybeam":true}
+,"introducedAttacks":{"Hyper Beam":true}}
 ,{"number":114,"name":"Tangela","type1":"grass","type2":"","fast":["Vine Whip"],"charge":["Power Whip","Sludge Bomb","Solar Beam"]}
 ,{"number":115,"name":"Kangaskhan","type1":"normal","type2":"","fast":["Mud Slap","Low Kick"],"charge":["Brick Break","Earthquake","Stomp"]}
 ,{"number":116,"name":"Horsea","type1":"water","type2":"","fast":["Water Gun","Bubble"],"charge":["Bubble Beam","Dragon Pulse","Flash Cannon"]}
 ,{"number":117,"name":"Seadra","type1":"water","type2":"","fast":["Water Gun","Dragon Breath"],"charge":["Blizzard","Dragon Pulse","Hydro Pump"]}
 ,{"number":118,"name":"Goldeen","type1":"water","type2":"","fast":["Peck","Mud Shot"],"charge":["Water Pulse","Horn Attack","Aqua Tail"]}
 ,{"number":119,"name":"Seaking","type1":"water","type2":"","fast":["Peck","Poison Jab"],"charge":["Icy Wind","Drill Run","Megahorn"]}
-,{"number":120,"name":"Staryu","type1":"water","type2":"","fast":["Quick Attack","Water Gun"],"charge":["Swift","Bubble Beam","Power Gem"]}
-,{"number":121,"name":"Starmie","type1":"water","type2":"psychic","fast":["Quick Attack","Water Gun"],"charge":["Hydro Pump","Power Gem","Psybeam"]}
+,{"number":120,"name":"Staryu","type1":"water","type2":"","fast":["Quick Attack","Water Gun","Tackle"],"charge":["Swift","Bubble Beam","Power Gem"],"obsoleteAttacks":{"Quick Attack":true}
+,"introducedAttacks":{"Tackle":true}}
+,{"number":121,"name":"Starmie","type1":"water","type2":"psychic","fast":["Quick Attack","Water Gun","Tackle"],"charge":["Hydro Pump","Power Gem","Psybeam","Psychic"],"obsoleteAttacks":{"Quick Attack":true,"Psybeam":true}
+,"introducedAttacks":{"Tackle":true,"Psychic":true}}
 ,{"number":122,"name":"Mr. Mime","type1":"psychic","type2":"fairy","fast":["Confusion","Zen Headbutt"],"charge":["Psybeam","Psychic","Shadow Ball"]}
 ,{"number":123,"name":"Scyther","type1":"bug","type2":"flying","fast":["Fury Cutter","Steel Wing"],"charge":["Night Slash","X-Scissor","Bug Buzz"]}
 ,{"number":124,"name":"Jynx","type1":"ice","type2":"psychic","fast":["Frost Breath","Pound"],"charge":["Draining Kiss","Ice Punch","Psyshock"]}
@@ -466,16 +477,18 @@ pgoData.pokedex =
 ,{"number":127,"name":"Pinsir","type1":"bug","type2":"","fast":["Rock Smash","Fury Cutter"],"charge":["Vice Grip","X-Scissor","Submission"]}
 ,{"number":128,"name":"Tauros","type1":"normal","type2":"","fast":["Tackle","Zen Headbutt"],"charge":["Horn Attack","Iron Head","Earthquake"]}
 ,{"number":129,"name":"Magikarp","type1":"water","type2":"","fast":["Splash"],"charge":["Struggle"]}
-,{"number":130,"name":"Gyarados","type1":"water","type2":"flying","fast":["Dragon Breath","Bite"],"charge":["Hydro Pump","Twister","Dragon Pulse"]}
+,{"number":130,"name":"Gyarados","type1":"water","type2":"flying","fast":["Dragon Breath","Bite"],"charge":["Hydro Pump","Twister","Dragon Pulse"],"obsoleteAttacks":{"Dragon Breath":true}}
 ,{"number":131,"name":"Lapras","type1":"water","type2":"ice","fast":["Frost Breath","Ice Shard"],"charge":["Dragon Pulse","Ice Beam","Blizzard"]}
 ,{"number":132,"name":"Ditto","type1":"normal","type2":"","fast":["Pound"],"charge":["Struggle"]}
 ,{"number":133,"name":"Eevee","type1":"normal","type2":"","fast":["Quick Attack","Tackle"],"charge":["Dig","Swift","Body Slam"]}
 ,{"number":134,"name":"Vaporeon","type1":"water","type2":"","fast":["Water Gun"],"charge":["Water Pulse","Hydro Pump","Aqua Tail"]}
 ,{"number":135,"name":"Jolteon","type1":"electric","type2":"","fast":["Thunder Shock"],"charge":["Discharge","Thunderbolt","Thunder"]}
 ,{"number":136,"name":"Flareon","type1":"fire","type2":"","fast":["Ember"],"charge":["Fire Blast","Flamethrower","Heat Wave"]}
-,{"number":137,"name":"Porygon","type1":"normal","type2":"","fast":["Quick Attack","Tackle"],"charge":["Psybeam","Signal Beam","Discharge"]}
+,{"number":137,"name":"Porygon","type1":"normal","type2":"","fast":["Quick Attack","Tackle","Zen Headbutt"],"charge":["Psybeam","Signal Beam","Discharge"],"obsoleteAttacks":{"Quick Attack":true}
+,"introducedAttacks":{"Zen Headbutt":true}}
 ,{"number":138,"name":"Omanyte","type1":"rock","type2":"water","fast":["Water Gun","Mud Shot"],"charge":["Ancient Power","Brine","Rock Tomb"]}
-,{"number":139,"name":"Omastar","type1":"rock","type2":"water","fast":["Rock Throw","Water Gun"],"charge":["Ancient Power","Hydro Pump","Rock Slide"]}
+,{"number":139,"name":"Omastar","type1":"rock","type2":"water","fast":["Rock Throw","Water Gun","Mud Shot"],"charge":["Ancient Power","Hydro Pump","Rock Slide"],"obsoleteAttacks":{"Rock Throw":true}
+,"introducedAttacks":{"Mud Shot":true}}
 ,{"number":140,"name":"Kabuto","type1":"rock","type2":"water","fast":["Scratch","Mud Shot"],"charge":["Ancient Power","Aqua Jet","Rock Tomb"]}
 ,{"number":141,"name":"Kabutops","type1":"rock","type2":"water","fast":["Mud Shot","Fury Cutter"],"charge":["Ancient Power","Water Pulse","Stone Edge"]}
 ,{"number":142,"name":"Aerodactyl","type1":"rock","type2":"flying","fast":["Steel Wing","Bite"],"charge":["Ancient Power","Iron Head","Hyper Beam"]}
@@ -487,6 +500,7 @@ pgoData.pokedex =
 ,{"number":148,"name":"Dragonair","type1":"dragon","type2":"","fast":["Dragon Breath"],"charge":["Wrap","Aqua Tail","Dragon Pulse"]}
 ,{"number":149,"name":"Dragonite","type1":"dragon","type2":"flying","fast":["Dragon Breath","Steel Wing"],"charge":["Dragon Pulse","Hyper Beam","Dragon Claw"]}
 ,{"number":150,"name":"Mewtwo","type1":"psychic","type2":"","fast":["Psycho Cut","Confusion"],"charge":["Psychic","Shadow Ball","Hyper Beam"]}
-,{"number":151,"name":"Mew","type1":"psychic","type2":"","fast":["Pound"],"charge":["Hurricane","Earthquake","Psychic","Dragon Pulse","Thunder","Moonblast","Fire Blast","Solar Beam","Hyper Beam"]}];
+,{"number":151,"name":"Mew","type1":"psychic","type2":"","fast":["Pound"],"charge":["Hurricane","Earthquake","Psychic","Dragon Pulse","Thunder","Moonblast","Fire Blast","Solar Beam","Hyper Beam","Blizzard"],"obsoleteAttacks":{"Moonblast":true,"Hurricane":true}
+,"introducedAttacks":{"Blizzard":true}}];
 
 // pokedex.js, EOF

@@ -11,3 +11,20 @@
 	width: 1em;
 	height: 1em;
 }
+
+.attack {
+	&.obsolete td {
+		color: #999;
+	}
+	&.obsolete td:first-child:before,
+	&.introduced td:first-child:before {
+		padding-right: .4em;
+		display: inline-block;
+	}
+	&.obsolete td:first-child:before {
+		content: "☒";
+	}
+	&.introduced td:first-child:before {
+		content: "☑";
+	}
+}

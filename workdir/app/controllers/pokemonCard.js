@@ -98,12 +98,28 @@
 		for (var i = 0; i < attackNames.length; i++) {
 			if (attackNames[i] in pgoData.attacks) {
 				var attack = $.extend({}, pgoData.attacks[attackNames[i]]);	// clone
+				// stab
 				if (isStab(attack, pokemon)) {
 					attack.dps *= pgoData.config.stabMultiplier;
 					attack.hasStab = true;
 				} else {
 					attack.hasStab = false;
 				}
+				// obsolete?
+				attack.obsolete = false;
+				if ('obsoleteAttacks' in pokemon) {
+					if (attack.name in pokemon.obsoleteAttacks) {
+						attack.obsolete = true;
+					}
+				}
+				// introduced?
+				attack.introduced = false;
+				if ('introducedAttacks' in pokemon) {
+					if (attack.name in pokemon.introducedAttacks) {
+						attack.introduced = true;
+					}
+				}
+				// append
 				attacks.push(attack);
 			} else {
 				LOG.warn('Unknown attack: ', attackNames[i]);
@@ -160,7 +176,12 @@
 		attack: function (attack) {
 			// {"Cross Chop":{"name":"Cross Chop","category":"Charge","type":"fighting","dps":30,"duration":2}
 			return ''
-				+'<tr class="attack ' + (attack.category) + ' ' + (attack.hasStab ? 'stab' : '') + '">'
+				+'<tr class="attack '
+						+ (attack.category)
+						+ ' ' + (attack.hasStab ? 'stab' : '')
+						+ ' ' + (attack.obsolete ? 'obsolete' : '')
+						+ ' ' + (attack.introduced ? 'introduced' : '')
+					+ '">'
 					+'<td>' + (attack.name) + '</td>'
 					+'<td>' + (attack.category) + '</td>'
 					+"<td><span class='type-"+attack.type+"'>"+attack.type+"</span></td>"
