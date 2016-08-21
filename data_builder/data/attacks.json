@@ -1,0 +1,124 @@
+{"Cross Chop":{"name":"Cross Chop","category":"Charge","type":"fighting","dps":30,"duration":2}
+,"Stone Edge":{"name":"Stone Edge","category":"Charge","type":"rock","dps":25.8,"duration":3.1}
+,"Blizzard":{"name":"Blizzard","category":"Charge","type":"ice","dps":25.6,"duration":3.9}
+,"Body Slam":{"name":"Body Slam","category":"Charge","type":"normal","dps":25.6,"duration":1.56}
+,"Hurricane":{"name":"Hurricane","category":"Charge","type":"flying","dps":25,"duration":3.2}
+,"Megahorn":{"name":"Megahorn","category":"Charge","type":"bug","dps":25,"duration":3.2}
+,"Power Whip":{"name":"Power Whip","category":"Charge","type":"grass","dps":25,"duration":2.8}
+,"Solar Beam":{"name":"Solar Beam","category":"Charge","type":"grass","dps":24.5,"duration":4.9}
+,"Fire Blast":{"name":"Fire Blast","category":"Charge","type":"fire","dps":24.4,"duration":4.1}
+,"Hyper Beam":{"name":"Hyper Beam","category":"Charge","type":"normal","dps":24,"duration":5}
+,"Earthquake":{"name":"Earthquake","category":"Charge","type":"ground","dps":23.8,"duration":4.2}
+,"Hydro Pump":{"name":"Hydro Pump","category":"Charge","type":"water","dps":23.7,"duration":3.8}
+,"Thunder":{"name":"Thunder","category":"Charge","type":"electric","dps":23.3,"duration":4.3}
+,"Dragon Claw":{"name":"Dragon Claw","category":"Charge","type":"dragon","dps":21.9,"duration":1.6}
+,"Gunk Shot":{"name":"Gunk Shot","category":"Charge","type":"poison","dps":21.7,"duration":3}
+,"Sludge Bomb":{"name":"Sludge Bomb","category":"Charge","type":"poison","dps":21.2,"duration":2.6}
+,"Heat Wave":{"name":"Heat Wave","category":"Charge","type":"fire","dps":21.1,"duration":3.8}
+,"Moonblast":{"name":"Moonblast","category":"Charge","type":"fairy","dps":20.7,"duration":4.1}
+,"Sludge Wave":{"name":"Sludge Wave","category":"Charge","type":"poison","dps":20.6,"duration":3.4}
+,"Thunderbolt":{"name":"Thunderbolt","category":"Charge","type":"electric","dps":20.4,"duration":2.7}
+,"Petal Blizzard":{"name":"Petal Blizzard","category":"Charge","type":"grass","dps":20.3,"duration":3.2}
+,"Leaf Blade":{"name":"Leaf Blade","category":"Charge","type":"grass","dps":19.6,"duration":2.8}
+,"Psychic":{"name":"Psychic","category":"Charge","type":"psychic","dps":19.6,"duration":2.8}
+,"Aqua Tail":{"name":"Aqua Tail","category":"Charge","type":"water","dps":19.1,"duration":2.35}
+,"Flamethrower":{"name":"Flamethrower","category":"Charge","type":"fire","dps":19,"duration":2.9}
+,"Play Rough":{"name":"Play Rough","category":"Charge","type":"fairy","dps":19,"duration":2.9}
+,"Brick Break":{"name":"Brick Break","category":"Charge","type":"fighting","dps":18.8,"duration":1.6}
+,"Dragon Pulse":{"name":"Dragon Pulse","category":"Charge","type":"dragon","dps":18.1,"duration":3.6}
+,"Ice Beam":{"name":"Ice Beam","category":"Charge","type":"ice","dps":17.8,"duration":3.65}
+,"Bug Buzz":{"name":"Bug Buzz","category":"Charge","type":"bug","dps":17.6,"duration":4.25}
+,"Cross Poison":{"name":"Cross Poison","category":"Charge","type":"poison","dps":16.7,"duration":1.5}
+,"Seed Bomb":{"name":"Seed Bomb","category":"Charge","type":"grass","dps":16.7,"duration":2.4}
+,"Thunder Punch":{"name":"Thunder Punch","category":"Charge","type":"electric","dps":16.7,"duration":2.4}
+,"Hyper Fang":{"name":"Hyper Fang","category":"Charge","type":"normal","dps":16.7,"duration":2.1}
+,"X-Scissor":{"name":"X-Scissor","category":"Charge","type":"bug","dps":16.7,"duration":2.1}
+,"Bone Club":{"name":"Bone Club","category":"Charge","type":"ground","dps":15.6,"duration":1.6}
+,"Rock Slide":{"name":"Rock Slide","category":"Charge","type":"rock","dps":15.6,"duration":3.2}
+,"Flash Cannon":{"name":"Flash Cannon","category":"Charge","type":"steel","dps":15.4,"duration":3.9}
+,"Iron Head":{"name":"Iron Head","category":"Charge","type":"steel","dps":15,"duration":2}
+,"Drill Peck":{"name":"Drill Peck","category":"Charge","type":"flying","dps":14.8,"duration":2.7}
+,"Psyshock":{"name":"Psyshock","category":"Charge","type":"psychic","dps":14.8,"duration":2.7}
+,"Drill Run":{"name":"Drill Run","category":"Charge","type":"ground","dps":14.7,"duration":3.4}
+,"Shadow Ball":{"name":"Shadow Ball","category":"Charge","type":"ghost","dps":14.6,"duration":3.08}
+,"Signal Beam":{"name":"Signal Beam","category":"Charge","type":"bug","dps":14.5,"duration":3.1}
+,"Fire Punch":{"name":"Fire Punch","category":"Charge","type":"fire","dps":14.3,"duration":2.8}
+,"Flame Burst":{"name":"Flame Burst","category":"Charge","type":"fire","dps":14.3,"duration":2.1}
+,"Stomp":{"name":"Stomp","category":"Charge","type":"normal","dps":14.3,"duration":2.1}
+,"Submission":{"name":"Submission","category":"Charge","type":"fighting","dps":14.3,"duration":2.1}
+,"Discharge":{"name":"Discharge","category":"Charge","type":"electric","dps":14,"duration":2.5}
+,"Power Gem":{"name":"Power Gem","category":"Charge","type":"rock","dps":13.8,"duration":2.9}
+,"Scald":{"name":"Scald","category":"Charge","type":"water","dps":13.8,"duration":4}
+,"Low Sweep":{"name":"Low Sweep","category":"Charge","type":"fighting","dps":13.3,"duration":2.25}
+,"Cut":{"name":"Cut","category":"Fast","type":"normal","dps":13.3,"duration":1.13}
+,"Dazzling Gleam":{"name":"Dazzling Gleam","category":"Charge","type":"fairy","dps":13.1,"duration":4.2}
+,"Pound":{"name":"Pound","category":"Fast","type":"normal","dps":13,"duration":0.54}
+,"Dark Pulse":{"name":"Dark Pulse","category":"Charge","type":"dark","dps":12.9,"duration":3.5}
+,"Ice Punch":{"name":"Ice Punch","category":"Charge","type":"ice","dps":12.9,"duration":3.5}
+,"Metal Claw":{"name":"Metal Claw","category":"Fast","type":"steel","dps":12.7,"duration":0.63}
+,"Psycho Cut":{"name":"Psycho Cut","category":"Fast","type":"psychic","dps":12.3,"duration":0.57}
+,"Dig":{"name":"Dig","category":"Charge","type":"ground","dps":12.1,"duration":5.8}
+,"Bite":{"name":"Bite","category":"Fast","type":"dark","dps":12,"duration":0.5}
+,"Dragon Breath":{"name":"Dragon Breath","category":"Fast","type":"dragon","dps":12,"duration":0.5}
+,"Scratch":{"name":"Scratch","category":"Fast","type":"normal","dps":12,"duration":0.5}
+,"Water Gun":{"name":"Water Gun","category":"Fast","type":"water","dps":12,"duration":0.5}
+,"Wing Attack":{"name":"Wing Attack","category":"Fast","type":"flying","dps":12,"duration":0.75}
+,"Fire Fang":{"name":"Fire Fang","category":"Fast","type":"fire","dps":11.9,"duration":0.84}
+,"Vice Grip":{"name":"Vice Grip","category":"Charge","type":"normal","dps":11.9,"duration":2.1}
+,"Shadow Claw":{"name":"Shadow Claw","category":"Fast","type":"ghost","dps":11.6,"duration":0.95}
+,"Feint Attack":{"name":"Feint Attack","category":"Fast","type":"dark","dps":11.5,"duration":1.04}
+,"Mud Bomb":{"name":"Mud Bomb","category":"Charge","type":"ground","dps":11.5,"duration":2.6}
+,"Sludge":{"name":"Sludge","category":"Charge","type":"poison","dps":11.5,"duration":2.6}
+,"Poison Jab":{"name":"Poison Jab","category":"Fast","type":"poison","dps":11.4,"duration":1.05}
+,"Zen Headbutt":{"name":"Zen Headbutt","category":"Fast","type":"psychic","dps":11.4,"duration":1.05}
+,"Horn Attack":{"name":"Horn Attack","category":"Charge","type":"normal","dps":11.4,"duration":2.2}
+,"Steel Wing":{"name":"Steel Wing","category":"Fast","type":"steel","dps":11.3,"duration":1.33}
+,"Bug Bite":{"name":"Bug Bite","category":"Fast","type":"bug","dps":11.1,"duration":0.45}
+,"Frost Breath":{"name":"Frost Breath","category":"Fast","type":"ice","dps":11.1,"duration":0.81}
+,"Mud Slap":{"name":"Mud Slap","category":"Fast","type":"ground","dps":11.1,"duration":1.35}
+,"Night Slash":{"name":"Night Slash","category":"Charge","type":"dark","dps":11.1,"duration":2.7}
+,"Mud Shot":{"name":"Mud Shot","category":"Fast","type":"ground","dps":10.9,"duration":0.55}
+,"Tackle":{"name":"Tackle","category":"Fast","type":"normal","dps":10.9,"duration":1.1}
+,"Bubble":{"name":"Bubble","category":"Fast","type":"water","dps":10.9,"duration":2.3}
+,"Vine Whip":{"name":"Vine Whip","category":"Fast","type":"grass","dps":10.8,"duration":0.65}
+,"Ice Shard":{"name":"Ice Shard","category":"Fast","type":"ice","dps":10.7,"duration":1.4}
+,"Magnet Bomb":{"name":"Magnet Bomb","category":"Charge","type":"steel","dps":10.7,"duration":2.8}
+,"Aqua Jet":{"name":"Aqua Jet","category":"Charge","type":"water","dps":10.6,"duration":2.35}
+,"Rock Smash":{"name":"Rock Smash","category":"Fast","type":"fighting","dps":10.6,"duration":1.41}
+,"Water Pulse":{"name":"Water Pulse","category":"Charge","type":"water","dps":10.6,"duration":3.3}
+,"Psybeam":{"name":"Psybeam","category":"Charge","type":"psychic","dps":10.5,"duration":3.8}
+,"Poison Fang":{"name":"Poison Fang","category":"Charge","type":"poison","dps":10.4,"duration":2.4}
+,"Brine":{"name":"Brine","category":"Charge","type":"water","dps":10.4,"duration":2.4}
+,"Aerial Ace":{"name":"Aerial Ace","category":"Charge","type":"flying","dps":10.3,"duration":2.9}
+,"Bubble Beam":{"name":"Bubble Beam","category":"Charge","type":"water","dps":10.3,"duration":2.9}
+,"Poison Sting":{"name":"Poison Sting","category":"Fast","type":"poison","dps":10.3,"duration":0.58}
+,"Razor Leaf":{"name":"Razor Leaf","category":"Fast","type":"grass","dps":10.3,"duration":1.45}
+,"Bulldoze":{"name":"Bulldoze","category":"Charge","type":"ground","dps":10.3,"duration":3.4}
+,"Lick":{"name":"Lick","category":"Fast","type":"ghost","dps":10,"duration":0.5}
+,"Spark":{"name":"Spark","category":"Fast","type":"electric","dps":10,"duration":0.7}
+,"Sucker Punch":{"name":"Sucker Punch","category":"Fast","type":"dark","dps":10,"duration":0.7}
+,"Swift":{"name":"Swift","category":"Charge","type":"normal","dps":10,"duration":3}
+,"Confusion":{"name":"Confusion","category":"Fast","type":"psychic","dps":9.9,"duration":1.51}
+,"Ancient Power":{"name":"Ancient Power","category":"Charge","type":"rock","dps":9.7,"duration":3.6}
+,"Ominous Wind":{"name":"Ominous Wind","category":"Charge","type":"ghost","dps":9.7,"duration":3.1}
+,"Acid":{"name":"Acid","category":"Fast","type":"poison","dps":9.5,"duration":1.05}
+,"Ember":{"name":"Ember","category":"Fast","type":"fire","dps":9.5,"duration":1.05}
+,"Twister":{"name":"Twister","category":"Charge","type":"dragon","dps":9.3,"duration":2.7}
+,"Air Cutter":{"name":"Air Cutter","category":"Charge","type":"flying","dps":9.1,"duration":3.3}
+,"Draining Kiss":{"name":"Draining Kiss","category":"Charge","type":"fairy","dps":8.9,"duration":2.8}
+,"Rock Tomb":{"name":"Rock Tomb","category":"Charge","type":"rock","dps":8.8,"duration":3.4}
+,"Struggle":{"name":"Struggle","category":"Charge","type":"normal","dps":8.8,"duration":1.7}
+,"Rock Throw":{"name":"Rock Throw","category":"Fast","type":"rock","dps":8.8,"duration":1.36}
+,"Flame Wheel":{"name":"Flame Wheel","category":"Charge","type":"fire","dps":8.7,"duration":4.6}
+,"Peck":{"name":"Peck","category":"Fast","type":"flying","dps":8.7,"duration":1.15}
+,"Bullet Punch":{"name":"Bullet Punch","category":"Fast","type":"steel","dps":8.3,"duration":1.2}
+,"Low Kick":{"name":"Low Kick","category":"Fast","type":"fighting","dps":8.3,"duration":0.6}
+,"Thunder Shock":{"name":"Thunder Shock","category":"Fast","type":"electric","dps":8.3,"duration":0.6}
+,"Flame Charge":{"name":"Flame Charge","category":"Charge","type":"fire","dps":8.1,"duration":3.1}
+,"Quick Attack":{"name":"Quick Attack","category":"Fast","type":"normal","dps":7.5,"duration":1.33}
+,"Fury Cutter":{"name":"Fury Cutter","category":"Fast","type":"bug","dps":7.5,"duration":0.4}
+,"Karate Chop":{"name":"Karate Chop","category":"Fast","type":"fighting","dps":7.5,"duration":0.8}
+,"Icy Wind":{"name":"Icy Wind","category":"Charge","type":"ice","dps":6.6,"duration":3.8}
+,"Disarming Voice":{"name":"Disarming Voice","category":"Charge","type":"fairy","dps":6.4,"duration":3.9}
+,"Wrap":{"name":"Wrap","category":"Charge","type":"normal","dps":6.3,"duration":4}
+,"Splash":{"name":"Splash","category":"Fast","type":"water","dps":0,"duration":1.23}}
