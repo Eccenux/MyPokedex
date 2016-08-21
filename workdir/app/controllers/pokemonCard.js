@@ -50,6 +50,9 @@
 			item.nextPokemonName = pokemon.name;
 			item.nextPokemonUrl = '#page-pokemonCard?id='+pokemon.number;
 		}
+		if (('obsoleteAttacks' in item) || ('introducedAttacks' in item)) {
+			item.attackChanges = true;
+		}
 		
 		// binding
 		var dataBinding = new DataBindings(page);
