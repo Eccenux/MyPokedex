@@ -2,8 +2,8 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id        = "pl.enux.MyPokedex"
-	versionCode="00304"
-	version   = "0.3.4">
+	versionCode="00305"
+	version   = "0.3.5">
 	<!--
 		versionCode = Mmmbb : Major.minor.build
 	-->

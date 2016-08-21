@@ -138,6 +138,13 @@
 				LOG.warn('Unknown attack: ', attackNames[i]);
 			}
 		}
+		// sort by category (fast first), dps (best first)
+		attacks.sort(function (item1, item2) {
+			if (item1.category === item2.category) {
+				return item2.dps - item1.dps;
+			}
+			return item1.category === 'fast' ? 1 : -1;
+		});
 	}
 
 	/**
