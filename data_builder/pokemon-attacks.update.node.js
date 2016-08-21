@@ -65,6 +65,14 @@ function applyChanges(changes, category, pokemonAttacks) {
 		if (row.introduced.length) {
 			pokemon[category].push(row.introduced);
 		}
+		// create and update obsolete attacks list
+		// obsolete = cannot be captured now, but can still be in possession of some players
+		if (row.obsolete.length) {
+			if (!('obsolete' in pokemon)) {
+				pokemon.obsolete = {};
+			}
+			pokemon.obsolete[row.obsolete] = true;
+		}
 	}
 }
 
