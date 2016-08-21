@@ -4,8 +4,21 @@
 <div data-role="page" id="page-pokemonCard" data-ignore-visit="true">
 
 	<div data-role="header">
-		<a href="index.html" data-icon="back" data-rel="back" data-i18n-key="Back"></a>
+		<a
+			data-binding-hide-on-empty="previousPokemonUrl"
+			data-binding-key-attribute="previousPokemonUrl:href"
+			href="" data-binding-key="previousPokemonName"
+			data-icon="arrow-l"
+			data-iconpos="left"
+			>&nbsp;</a>
 		<h1 data-binding-key="name">Pokemon</h1>
+		<a
+			data-binding-hide-on-empty="nextPokemonUrl"
+			data-binding-key-attribute="nextPokemonUrl:href"
+			href="" data-binding-key="nextPokemonName"
+			data-icon="arrow-r"
+			data-iconpos="right"
+			>&nbsp;</a>
 	</div><!-- /header -->
 
 	<div data-role="content" class="pokemon-card pokemon-icons-large">
@@ -45,6 +58,22 @@
 						>more on fevgames</a>).
 				</p>
 			</div>
+			<!--
+			<div data-binding-hide-on-empty="previousPokemonName" data-role="navbar">
+				<ul>
+					<li><a data-binding-key-attribute="previousPokemonUrl:href"
+					href="" data-binding-key="previousPokemonName"
+					data-icon="arrow-l"
+					data-iconpos="left"
+					>&nbsp;</a></li>
+					<li><a data-binding-key-attribute="nextPokemonUrl:href"
+					href="" data-binding-key="nextPokemonName"
+					data-icon="arrow-r"
+					data-iconpos="right"
+					>&nbsp;</a></li>
+				</ul>
+			</div>
+			-->
 		</div>
 	</div><!-- /content -->
 

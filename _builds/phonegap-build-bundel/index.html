@@ -114,7 +114,7 @@
 						Opr&oacute;cz samej listy pokemn&oacute;w dost&#281;pne s&#261; te&#380; listy atak&oacute;w danego pokemona
 						wraz DPS (damage per second, czyli obra&#380;enia na sekund&#281;).
 					</p>
-					<p>Wersja aplikacji 0.3.1.</p>
+					<p>Wersja aplikacji 0.3.2.</p>
 				</div>
 				<div data-lang="en">
 					<p>
@@ -122,7 +122,7 @@
 						It includes available attacks 
 						and DPS (damage per second) calculation for each pokemon.
 					</p>
-					<p>App version 0.3.1.</p>
+					<p>App version 0.3.2.</p>
 				</div>
 			</div>
 			<div data-role="collapsible" data-collapsed="true">
@@ -257,8 +257,9 @@
 <div data-role="page" id="page-pokemonCard" data-ignore-visit="true">
 
 	<div data-role="header">
-		<a href="index.html" data-icon="back" data-rel="back" data-i18n-key="Back"></a>
+		<a data-binding-hide-on-empty="previousPokemonUrl" data-binding-key-attribute="previousPokemonUrl:href" href="" data-binding-key="previousPokemonName" data-icon="arrow-l" data-iconpos="left">&nbsp;</a>
 		<h1 data-binding-key="name">Pokemon</h1>
+		<a data-binding-hide-on-empty="nextPokemonUrl" data-binding-key-attribute="nextPokemonUrl:href" href="" data-binding-key="nextPokemonName" data-icon="arrow-r" data-iconpos="right">&nbsp;</a>
 	</div><!-- /header -->
 
 	<div data-role="content" class="pokemon-card pokemon-icons-large">
@@ -296,6 +297,22 @@
 					<br>(<a target="_blank" href="https://fevgames.net/pokemon-go-balance-update-august-20-2016/">more on fevgames</a>).
 				</p>
 			</div>
+			<!--
+			<div data-binding-hide-on-empty="previousPokemonName" data-role="navbar">
+				<ul>
+					<li><a data-binding-key-attribute="previousPokemonUrl:href"
+					href="" data-binding-key="previousPokemonName"
+					data-icon="arrow-l"
+					data-iconpos="left"
+					>&nbsp;</a></li>
+					<li><a data-binding-key-attribute="nextPokemonUrl:href"
+					href="" data-binding-key="nextPokemonName"
+					data-icon="arrow-r"
+					data-iconpos="right"
+					>&nbsp;</a></li>
+				</ul>
+			</div>
+			-->
 		</div>
 	</div><!-- /content -->
 

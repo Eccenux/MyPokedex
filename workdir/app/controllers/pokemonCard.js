@@ -40,6 +40,16 @@
 		item.type1Class = "type-"+item.type1;
 		item.type2Class = "type-"+item.type2;
 		item.imageClass = "pokemon-icon pokemon-num"+item.number;
+		if (item.number-1 >= 1) {
+			var pokemon = pgoData.pokedex[item.number-1];
+			item.previousPokemonName = pokemon.name;
+			item.previousPokemonUrl = '#page-pokemonCard?id='+pokemon.number;
+		}
+		if (item.number+1 < pgoData.pokedex.length) {
+			var pokemon = pgoData.pokedex[item.number+1];
+			item.nextPokemonName = pokemon.name;
+			item.nextPokemonUrl = '#page-pokemonCard?id='+pokemon.number;
+		}
 		
 		// binding
 		var dataBinding = new DataBindings(page);
