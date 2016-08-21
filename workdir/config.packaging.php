@@ -9,8 +9,8 @@
 //==========================================
 // Your paths
 //==========================================
-// Android test build (optional)
-//$strTestBuildRoot = '_builds/phonegap-android-project/assets/www/';
+// Website build
+$strWebBuildRoot = '../_builds/website/';
 
 // Output path (relative to $strBaseScriptDir)
 $strBundleRoot = '../_builds/phonegap-build-bundel/';

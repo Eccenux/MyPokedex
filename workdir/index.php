@@ -59,11 +59,12 @@
 	<!-- jQuery mobile (must be here for mobile...options to work) -->
 	<?=$processor->js('jqm')?>
 
-	<!-- plugin(s) -->
-	<!-- phonegap.js = cordova.js (file is injected automatically) -->
+	<!-- PHONEGAP:START -->
 	<?php if ($processingMode == 'pgb-bundle') { ?>
+		<!-- phonegap.js = cordova.js (file is injected automatically) -->
 		<script src="phonegap.js"></script>
 	<?php } ?>
+	<!-- PHONEGAP:END -->
 </head>
 <body lang="pl">
 <?php

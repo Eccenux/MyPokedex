@@ -120,6 +120,16 @@
 	}
 
 	//==========================================
+	// Copy build to web build
+	//==========================================
+	if (isset($strWebBuildRoot) && $oFileHelper->exists($strWebBuildRoot)) {
+		$oFileHelper->copy($strBundleRoot, $strWebBuildRoot, array('#\\.lnk#', '#config\\.xml#'));
+		// remove phonegap specifc code?
+		$oFileHelper->replaceInFile('#PHONEGAP:START[\s\S]+PHONEGAP:END#i', '', $strWebBuildRoot.'index.html', true);
+
+	}
+
+	//==========================================
 	// Create zip
 	//==========================================
 	if (isset($strZipBundlePath) && $oFileHelper->exists($strBundleRoot)) {
