@@ -9,11 +9,14 @@
 //==========================================
 // Your paths
 //==========================================
-// Website build
-$strWebBuildRoot = '../_builds/website/';
-
 // Output path (relative to $strBaseScriptDir)
 $strBundleRoot = '../_builds/phonegap-build-bundel/';
+
+// Android test build (optional)
+//$strTestBuildRoot = '../_builds/phonegap-android-project/assets/www/';
+
+// Website build (optional)
+$strWebBuildRoot = '../_builds/website/';
 
 // PhoneGap widget config file path (relative to $strBaseScriptDir)
 $widgetConfigFilePath = 'config-PhoneGap.xml';
