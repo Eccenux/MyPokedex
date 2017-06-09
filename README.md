@@ -1,3 +1,5 @@
+https://m.enux.pl/myPokedex/
+
 (scroll down for English) 
 
 Polski
